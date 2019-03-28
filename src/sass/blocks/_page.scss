@@ -1,0 +1,82 @@
+// Вакансия
+.vacancy-single {
+    padding: 20px 0;
+}
+.box-head {
+    border-bottom: 0.75px solid $font-color;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+.vacancy-company {
+    font-weight: 500;
+    font-size: 21px;
+    color: $title-color;
+}
+.vacancy-pay {
+    font-weight: 700;
+    font-size: 21px;
+    color: $blue;
+}
+.box-body {
+    padding: 7px 0;
+    margin-bottom: 20px;
+}
+.vacancy-city,
+.vacancy-date {
+    width: 50%;
+    font-size: 14px;
+    color: $title-color;
+}
+.vacancy-employment {
+    width: 100%;
+    font-weight: 400;
+    color: $title-color;
+    margin-top: 5px;
+}
+.vacancy-meta {
+    margin-bottom: 10px;
+}
+.vacancy-meta,
+.vacancy-column-box {
+    flex-wrap: wrap;
+}
+.vacancy-date {
+    text-align: right;
+}
+.vacancy-column-box {
+    margin: 0 -20px;
+}
+.vacancy-column {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    h2 {
+        font-weight: 500;
+        font-size: 21px;
+        color: $title-color;
+        margin-bottom: 12px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+.vacancy-column--third {
+    width: 33.3%;
+}
+.vacancy-action,
+.vacancy-favorite {
+    width: 50%;
+}
+.vacancy-favorite {
+    text-align: right;
+}
+.box-footer {
+    padding-bottom: 20px;
+}
+.vacancy-favorite-link {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    width: 36.98px;
+    height: 36.98px;
+    background: url(../img/star.svg) 0 0 no-repeat;
+}

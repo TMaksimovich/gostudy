@@ -1,0 +1,15 @@
+.footer-box {
+	border-top: 0.75px solid rgba(171, 171, 171, 0.6);
+	padding: 35px 0;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 17px;
+	color: $title-color;
+	justify-content: space-between;
+	a {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 17px;
+		color: $title-color;
+	}
+}

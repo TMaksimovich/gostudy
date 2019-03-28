@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #F1F1F1;
+  color: $font-color;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+main {
+  flex: 1 0 auto;
+}
+footer,
+header {
+  flex: 0 0 auto;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.box {
+  display: flex;
+}
+
+input[type="search"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.title-blue {
+  color: $dark-blue;
+}
+.column {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  padding: 0 15px;
+  margin-top: 25px;
+}
+.column-full {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
