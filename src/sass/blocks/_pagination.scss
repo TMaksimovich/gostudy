@@ -1,0 +1,43 @@
+.pagination {
+    margin-top: 25px;
+}
+.page-numbers {
+    border: 0.5px solid #C7C6C6;
+    font-size: 12px;
+    line-height: normal;
+    color: #616161;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 4px;
+    &.current {
+        background-color: $dark-blue;
+        border-color: $dark-blue;
+        color: #fff;
+    }
+    &.prev,
+    &.next {
+        font-size: 0;
+        position: relative;
+        &:before {
+            content: '';
+            background: url(../img/arrow.svg) center no-repeat;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+    &.next:before {
+        transform: rotate(180deg);
+    }
+}
+.nav-links {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+}

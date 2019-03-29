@@ -1,7 +1,4 @@
 // Вакансия
-.vacancy-single {
-    padding: 20px 0;
-}
 .box-head {
     border-bottom: 0.75px solid $font-color;
     padding: 15px 0;
@@ -79,4 +76,61 @@
     width: 36.98px;
     height: 36.98px;
     background: url(../img/star.svg) 0 0 no-repeat;
+    border: none;
+    outline: none;
+    &.vacancy-favorite-link--active {
+        background: url(../img/star-blue.svg) 0 0 no-repeat;
+        background-size: 36.98px 36.98px;
+    }
 }
+// end Вакансия
+
+
+// Вакансии
+.vacancy-row {
+    margin: 0 -5px;
+    flex-wrap: wrap;
+}
+.vacancy-card {
+    margin: 0 5px 10px;
+    width: 32.4%;
+    .vacancy-favorite-link {
+        width: 19.27px;
+        height: 19.27px;
+        background-size: 19.27px 19.27px;
+    }
+    .vacancy-favorite {
+        width: 30px;
+    }
+    .vacancy-company {
+        font-size: 16px;
+        width: 50%;
+    }
+    .vacancy-city,
+    .vacancy-pay {
+        text-align: right;
+    }
+    .vacancy-date {
+        text-align: left;
+    }
+    .vacancy-pay {
+        width: 50%;
+        color: $dark-blue;
+    }
+}
+.vacancy-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: $dark-blue;
+}
+.vacancy-desc {
+    height: 84px;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 20px;
+}
+.vacancy-link {
+    color: inherit;
+}
+// end Вакансии

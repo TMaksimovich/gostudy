@@ -32,6 +32,7 @@ body {
 }
 main {
   flex: 1 0 auto;
+  padding: 20px 0;
 }
 footer,
 header {
@@ -66,6 +67,7 @@ input[type="search"] {
 .title {
   font-weight: 700;
   font-size: 24px;
+  color: $title-color;
 }
 .title-blue {
   color: $dark-blue;
@@ -79,6 +81,15 @@ input[type="search"] {
 }
 .column-full {
   width: 100%;
+}
+.column-half {
+  width: 50%;
+}
+.column-third {
+  width: 33.3%;
+}
+.column-four {
+  width: 25%;
 }
 
 

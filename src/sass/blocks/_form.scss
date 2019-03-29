@@ -1,0 +1,158 @@
+.form-head {
+	background: #E8E8E8;
+	border-bottom: 0.5px solid #C7C6C6;
+	border-radius: 5px 5px 0 0;
+	padding: 11px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color: $title-color;
+}
+
+.form-body {
+	padding: 11px;
+	p {
+		font-size: 12px;
+		line-height: 17px;
+		color: #616161;
+	}
+}
+.social {
+	text-align: center;
+}
+.social-list {
+	padding: 7px 0;
+	justify-content: center;
+}
+.social-item {
+	margin: 5px;
+}
+.social-link {
+	width: 30px;
+	height: 30px;
+	display: block;
+	font-size: 0;
+}
+.social-link--google {
+	background: url(../img/google.svg) 0 0 no-repeat;
+}
+.social-link--facebook {
+	background: url(../img/fb.svg) 0 0 no-repeat;
+}
+.social-link--vk {
+	background: url(../img/vk.svg) 0 0 no-repeat;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	p {
+		text-align: center;
+		margin-bottom: 5px;
+	}
+}
+input {
+	margin: 5px 0;
+	background: #E8E8E8;
+	border-radius: 5px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #515151;
+	padding: 8px 10px;
+	border: none;
+	outline: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+input[type="submit"] {
+	background-color: $dark-blue;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	padding: 10px;
+	&:hover,
+	&:active {
+		background-color: $blue;
+	}
+}
+
+.form-link {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 17px;
+	color: $blue;
+	text-align: right;
+	display: block;
+	&:hover,
+	&:active {
+		color: $dark-blue;
+	}
+}
+.form-footer {
+	justify-content: space-between;
+	padding-bottom: 5px;
+	padding-top: 15px;
+}
+.form-footer p,
+.form-footer a {
+	font-size: 10px;
+	line-height: 14px;
+}
+
+.input-checkbox {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    font-size: 10px;
+	line-height: 14px;
+	color: #515151;
+	font-weight: 400;
+    input[type="checkbox"] {
+	    visibility: hidden;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    margin: 0;
+	    padding: 0;
+	    outline: none;
+	    cursor: pointer;
+	    opacity: 0;
+	}
+	span.checkbox {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    position: relative;
+	    display: block;
+	}
+	input[type="checkbox"] + .checkbox:before {
+		content: '';
+	    position: absolute;
+	    left: -20px;
+	    top: 0;
+	    width: 12px;
+	    height: 12px;
+	    background-color: #f5f4f4;
+	    border: 1px solid #27D4B4;
+	    z-index: 1;
+	    cursor: pointer;
+	    border-radius: 2px;
+	}
+	input[type="checkbox"]:checked + .checkbox:before {
+	    background-color: #27D4B4;
+	}
+	input[type="checkbox"]:checked + .checkbox:after {
+	    content: '';
+	    position: absolute;
+		z-index: 2;
+		top: 2px;
+		left: -18px;
+		width: 10px;
+		height: 10px;
+	    background: url(../img/checkbox.svg) 0 0 no-repeat;
+	    cursor: pointer;
+	}
+}

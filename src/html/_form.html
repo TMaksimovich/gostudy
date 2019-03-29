@@ -1,0 +1,78 @@
+<form id="loginForm" class="mfp-hide white-popup-block">
+    <div class="form-head">
+        <p>Войти</p>
+    </div>
+
+    <div class="form-body">
+        <div class="social">
+            <p>через соцсети</p>
+            <ul class="social-list box">
+                <li class="social-item">
+                    <a href="#" class="social-link social-link--google">google</a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link social-link--facebook">facebook</a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link social-link--vk">vk</a>
+                </li>
+            </ul>
+        </div>
+
+        <fieldset>
+            <p>или через E-mail</p>
+            <input id="email" name="email" type="email" placeholder="E-mail" required="">
+            <input id="password" name="password" type="password" placeholder="Пароль" required="">
+            <a href="#" class="form-link">Забыли пароль?</a>
+            <input type="submit" value="Войти">
+
+            <label class="input-checkbox">
+                <input type="checkbox" checked>
+                <span class="checkbox"></span> Запомнить меня
+            </label>
+
+        </fieldset>
+
+        <div class="form-footer box">
+            <p>Ещё не зарегистрировались?</p>
+            <a href="#registrationForm" class="form-link">Регистрация</a>
+        </div>
+    </div>
+</form>
+
+<form id="registrationForm" class="mfp-hide white-popup-block">
+    <div class="form-head">
+        <p>Регистрация</p>
+    </div>
+
+    <div class="form-body">
+        <div class="social">
+            <p>через соцсети</p>
+            <ul class="social-list box">
+                <li class="social-item">
+                    <a href="#" class="social-link social-link--google">google</a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link social-link--facebook">facebook</a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link social-link--vk">vk</a>
+                </li>
+            </ul>
+        </div>
+
+        <fieldset>
+            <p>или через E-mail</p>
+            <input id="name" name="name" type="text" placeholder="Имя" required="">
+            <input id="surname" name="surname" type="text" placeholder="Фамилия" required="">
+            <input id="email" name="email" type="email" placeholder="E-mail" required="">
+            <input id="password" name="password" type="password" placeholder="Пароль" required="">
+            <input type="submit" value="Зарегистрироваться">
+        </fieldset>
+
+        <div class="form-footer box">
+            <p>Уже зарегистрировались?</p>
+            <a href="#loginForm" class="form-link">Войти</a>
+        </div>
+    </div>
+</form>

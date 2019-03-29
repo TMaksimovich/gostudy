@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        //= html/_head.html
+        <title>GoStudy - Вакансии</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="container">
+                    <div class="header-box box">
+                        <div class="logo">
+                            <a href="/" class="logo-link"><span>Go</span>Study</a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item"><a href="vacancy.html" class="menu-link menu-link--active">Вакансии</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <form role="search" method="get" action="#" class="search-form">
+                                <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
+                                <button class="search-btn" type="submit">Найти</button>
+                            </form>
+                        </div>
+                        <div class="header-links">
+                            <ul class="header-links-list">
+                                <li class="header-links-item">
+                                    <a href="#loginForm" class="header-links-login header-links-popap">Войти</a>
+                                </li>
+                                <li class="header-links-item">
+                                    <a href="#registrationForm" class="header-links-registration header-links-popap">Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="vacancy">
+                <div class="container">
+                    <h1 class="title">Вакансии по запросу «Веб-дизайнер»</h1>
+                    <div class="filter-box">
+                        <form action="#" class="filter-form box">
+                            <div class="group filter-group">
+                                <select name="sources" id="sources" class="custom-select sources" placeholder="Регион">
+                                    <option value="Москва">Москва</option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                </select>
+                            </div>
+
+                            <div class="group filter-group">
+                                <select name="sources" id="sources-range" class="custom-select sources" placeholder="Сфера деятельности">
+                                    <option value="IT сфера">IT сфера</option>
+                                    <option value="Экономика">Экономика</option>
+                                    <option value="Юриспруденция">Юриспруденция</option>
+                                    <option value="Наука">Наука</option>
+                                    <option value="Образование">Образование</option>
+                                    <option value="Безопасность">Безопасность</option>
+                                    <option value="Закупки">Закупки</option>
+                                </select>
+                            </div>
+
+                            <div class="group filter-group">
+                                <select name="sources" id="sources-type" class="custom-select sources" placeholder="Тип занятости">
+                                    <option value="Полная занятость">Полная занятость</option>
+                                    <option value="Частичная занятость">Частичная занятость</option>
+                                </select>
+                            </div>
+
+                            <div class="group filter-group">
+                                <select name="sources" id="sources-cash" class="custom-select sources" placeholder="Зарплата">
+                                    <option value="Зарплата">Зарплата</option>
+                                    <option value="Зарплата">Зарплата</option>
+                                </select>
+                            </div>
+
+                            <div class="group filter-group">
+                                <select name="sources" id="sources-experience" class="custom-select sources" placeholder="Опыт работы">
+                                    <option value="Не имеет значения">Не имеет значения</option>
+                                    <option value="Нет опыта">Нет опыта</option>
+                                    <option value="От 1 года до 3 лет">От 1 года до 3 лет</option>
+                                    <option value="От 3 до 6 лет">От 3 до 6 лет</option>
+                                    <option value="более 6 лет">более 6 лет</option>
+                                </select>
+                            </div>
+
+                            <div class="group filter-group">
+                                <select name="sources" id="sources-duration" class="custom-select sources" placeholder="Выводить">
+                                    <option value="За 2 месяца">За 2 месяца</option>
+                                    <option value="За месяц">За месяц</option>
+                                    <option value="За неделю">За неделю</option>
+                                    <option value="За последние три дня">За последние три дня</option>
+                                    <option value="За сутки">За сутки</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="box vacancy-row">
+                        <div class="column vacancy-card">
+                            <a href="vacancy-single.html" class="vacancy-link">
+                                <div class="box-head box">
+                                    <div class="vacancy-name">
+                                        <p>Веб-дизайнер</p>
+                                    </div>
+                                    <div class="vacancy-favorite">
+                                        <button class="vacancy-favorite-link">В избранное</button>
+                                    </div>
+                                </div>
+
+                                <div class="box-body">
+                                    <div class="vacancy-meta box">
+                                        <div class="vacancy-company">
+                                            <p>Ростелеком</p>
+                                        </div>
+                                        <div class="vacancy-city">
+                                            <p>Москва</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui aut, iusto eos rem assumenda, nulla possimus quidem officia? Reprehenderit!</p>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer box">
+                                    <div class="vacancy-date">
+                                        <p>16 марта 2019</p>
+                                    </div>
+                                    <div class="vacancy-pay">
+                                        <p>50 000 руб</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column vacancy-card">
+                            <a href="vacancy-single.html" class="vacancy-link">
+                                <div class="box-head box">
+                                    <div class="vacancy-name">
+                                        <p>Веб-дизайнер</p>
+                                    </div>
+                                    <div class="vacancy-favorite">
+                                        <button class="vacancy-favorite-link vacancy-favorite-link--active">В избранное</button>
+                                    </div>
+                                </div>
+
+                                <div class="box-body">
+                                    <div class="vacancy-meta box">
+                                        <div class="vacancy-company">
+                                            <p>Ростелеком</p>
+                                        </div>
+                                        <div class="vacancy-city">
+                                            <p>Москва</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui aut, iusto eos rem assumenda, nulla possimus quidem officia? Reprehenderit!</p>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer box">
+                                    <div class="vacancy-date">
+                                        <p>16 марта 2019</p>
+                                    </div>
+                                    <div class="vacancy-pay">
+                                        <p>50 000 руб</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column vacancy-card">
+                            <a href="vacancy-single.html" class="vacancy-link">
+                                <div class="box-head box">
+                                    <div class="vacancy-name">
+                                        <p>Веб-дизайнер</p>
+                                    </div>
+                                    <div class="vacancy-favorite">
+                                        <button class="vacancy-favorite-link">В избранное</button>
+                                    </div>
+                                </div>
+
+                                <div class="box-body">
+                                    <div class="vacancy-meta box">
+                                        <div class="vacancy-company">
+                                            <p>Ростелеком</p>
+                                        </div>
+                                        <div class="vacancy-city">
+                                            <p>Москва</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui aut, iusto eos rem assumenda, nulla possimus quidem officia? Reprehenderit!</p>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer box">
+                                    <div class="vacancy-date">
+                                        <p>16 марта 2019</p>
+                                    </div>
+                                    <div class="vacancy-pay">
+                                        <p>50 000 руб</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column vacancy-card">
+                            <a href="vacancy-single.html" class="vacancy-link">
+                                <div class="box-head box">
+                                    <div class="vacancy-name">
+                                        <p>Веб-дизайнер</p>
+                                    </div>
+                                    <div class="vacancy-favorite">
+                                        <button class="vacancy-favorite-link">В избранное</button>
+                                    </div>
+                                </div>
+
+                                <div class="box-body">
+                                    <div class="vacancy-meta box">
+                                        <div class="vacancy-company">
+                                            <p>Ростелеком</p>
+                                        </div>
+                                        <div class="vacancy-city">
+                                            <p>Москва</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui aut, iusto eos rem assumenda, nulla possimus quidem officia? Reprehenderit!</p>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer box">
+                                    <div class="vacancy-date">
+                                        <p>16 марта 2019</p>
+                                    </div>
+                                    <div class="vacancy-pay">
+                                        <p>50 000 руб</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column vacancy-card">
+                            <a href="vacancy-single.html" class="vacancy-link">
+                                <div class="box-head box">
+                                    <div class="vacancy-name">
+                                        <p>Веб-дизайнер</p>
+                                    </div>
+                                    <div class="vacancy-favorite">
+                                        <button class="vacancy-favorite-link">В избранное</button>
+                                    </div>
+                                </div>
+
+                                <div class="box-body">
+                                    <div class="vacancy-meta box">
+                                        <div class="vacancy-company">
+                                            <p>Ростелеком</p>
+                                        </div>
+                                        <div class="vacancy-city">
+                                            <p>Москва</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui aut, iusto eos rem assumenda, nulla possimus quidem officia? Reprehenderit!</p>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer box">
+                                    <div class="vacancy-date">
+                                        <p>16 марта 2019</p>
+                                    </div>
+                                    <div class="vacancy-pay">
+                                        <p>50 000 руб</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column vacancy-card">
+                            <a href="vacancy-single.html" class="vacancy-link">
+                                <div class="box-head box">
+                                    <div class="vacancy-name">
+                                        <p>Веб-дизайнер</p>
+                                    </div>
+                                    <div class="vacancy-favorite">
+                                        <button class="vacancy-favorite-link">В избранное</button>
+                                    </div>
+                                </div>
+
+                                <div class="box-body">
+                                    <div class="vacancy-meta box">
+                                        <div class="vacancy-company">
+                                            <p>Ростелеком</p>
+                                        </div>
+                                        <div class="vacancy-city">
+                                            <p>Москва</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui aut, iusto eos rem assumenda, nulla possimus quidem officia? Reprehenderit!</p>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer box">
+                                    <div class="vacancy-date">
+                                        <p>16 марта 2019</p>
+                                    </div>
+                                    <div class="vacancy-pay">
+                                        <p>50 000 руб</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column vacancy-card">
+                            <a href="vacancy-single.html" class="vacancy-link">
+                                <div class="box-head box">
+                                    <div class="vacancy-name">
+                                        <p>Веб-дизайнер</p>
+                                    </div>
+                                    <div class="vacancy-favorite">
+                                        <button class="vacancy-favorite-link">В избранное</button>
+                                    </div>
+                                </div>
+
+                                <div class="box-body">
+                                    <div class="vacancy-meta box">
+                                        <div class="vacancy-company">
+                                            <p>Ростелеком</p>
+                                        </div>
+                                        <div class="vacancy-city">
+                                            <p>Москва</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui aut, iusto eos rem assumenda, nulla possimus quidem officia? Reprehenderit!</p>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer box">
+                                    <div class="vacancy-date">
+                                        <p>16 марта 2019</p>
+                                    </div>
+                                    <div class="vacancy-pay">
+                                        <p>50 000 руб</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column vacancy-card">
+                            <a href="vacancy-single.html" class="vacancy-link">
+                                <div class="box-head box">
+                                    <div class="vacancy-name">
+                                        <p>Веб-дизайнер</p>
+                                    </div>
+                                    <div class="vacancy-favorite">
+                                        <button class="vacancy-favorite-link">В избранное</button>
+                                    </div>
+                                </div>
+
+                                <div class="box-body">
+                                    <div class="vacancy-meta box">
+                                        <div class="vacancy-company">
+                                            <p>Ростелеком</p>
+                                        </div>
+                                        <div class="vacancy-city">
+                                            <p>Москва</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui aut, iusto eos rem assumenda, nulla possimus quidem officia? Reprehenderit!</p>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer box">
+                                    <div class="vacancy-date">
+                                        <p>16 марта 2019</p>
+                                    </div>
+                                    <div class="vacancy-pay">
+                                        <p>50 000 руб</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+                        <nav class="pagination column-full" role="navigation">
+                            <div class="nav-links">
+                                <a class="prev page-numbers" href="#"><</a>
+                                <span aria-current="page" class="page-numbers current">1</span>
+                                <a class="page-numbers" href="#">2</a>
+                                <a class="page-numbers" href="#">3</a>
+                                <span class="page-numbers more">...</span>
+                                <a class="page-numbers" href="#">98</a>
+                                <a class="page-numbers" href="#">99</a>
+                                <a class="next page-numbers" href="#">></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </main>
+
+            //= html/_footer.html
+            //= html/_form.html
+            //= html/_scripts.html
+        </div>
+    </body>
+</html>
