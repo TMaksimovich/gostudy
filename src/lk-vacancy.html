@@ -2,12 +2,12 @@
 <html lang="ru">
     <head>
         //= html/_head.html
-        <title>GoStudy - Вакансии</title>
+        <title>GoStudy - Мои вакансии</title>
     </head>
 
     <body>
         <div class="wrapper">
-            <header>
+            <header class="fixed lk-header">
                 <div class="container-full">
                     <div class="header-box box">
                         <div class="logo">
@@ -25,7 +25,7 @@
                                 <button class="search-btn" type="submit">Найти</button>
                             </form>
                         </div>
-                        <div class="header-meta">
+                        <div class="header-meta box">
                             <div class="dropdown-menu dropdown-menu--notification">
                                 <p class="dropdown-menu-title">Уведомления</p>
                                 <ul class="dropdown-menu-list">
@@ -70,7 +70,7 @@
 
                             <div class="dropdown-menu dropdown-menu--profile">
                                 <p class="dropdown-menu-title">
-                                    <img src="#" class="dropdown-menu-avatar" alt="">
+                                    <img src="/img/avatar.svg" class="dropdown-menu-avatar" alt="">
                                 </p>
                                 <ul class="dropdown-menu-list">
                                     <li class="dropdown-menu-item">
@@ -95,38 +95,87 @@
                 </div>
             </header>
 
-            <aside class="sidebar">
-                <div class="sidebar-profile">
-                    <div class="sidebar-avatar">
-                        <img src="" alt="">
+            <div class="lk-wrapper">
+                <aside class="sidebar">
+                    <div class="sidebar-profile">
+                        <div class="sidebar-avatar">
+                            <img src="img/avatar.svg" alt="Константин Константинопольский">
+                        </div>
+                        <p class="sidebar-name">Константин Константинопольский</p>
+                        <p class="sidebar-email">konstantink@gmail.com</p>
                     </div>
-                    <p class="sidebar-name">Константин Константинопольский</p>
-                    <p class="sidebar-email">konstantink@gmail.com</p>
-                </div>
-                <ul class="sidebar-menu">
-                    <li class="sidebar-item">
-                        <a href="lk-profile.html" class="sidebar-link">Профиль</a>
-                    </li>
-                    <li class="sidebar-item sidebar-item--active">
-                        <a href="lk-vacancy.html" class="sidebar-link">Вакансии</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="lk-resume.html" class="sidebar-link">Резюме</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Курсы</a>
-                    </li>
-                    <li class="sidebar-item sidebar-item--logout">
-                        <a href="#" class="sidebar-link">Выход</a>
-                    </li>
-                </ul>
-            </aside>
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-item">
+                            <a href="lk-profile.html" class="sidebar-link">Профиль</a>
+                        </li>
+                        <li class="sidebar-item sidebar-item--active">
+                            <a href="lk-vacancy.html" class="sidebar-link">Вакансии</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="lk-resume.html" class="sidebar-link">Резюме</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Курсы</a>
+                        </li>
+                        <li class="sidebar-item sidebar-item--logout">
+                            <a href="#" class="sidebar-link">Выход</a>
+                        </li>
+                    </ul>
+                </aside>
 
-            <main class="lk-main">
+                <main class="lk-main">
+                    <div class="column column-full column-lk">
+                        <div class="box-head box">
+                            <h1>Мои вакансии</h1>
+                            <a href="#" class="btn">Добавить вакансию</a>
+                        </div>
 
-            </main>
+                        <div class="box-body">
+                            <table class="lk-table">
+                                <tr>
+                                    <th>Название</th>
+                                    <th>Зарплата</th>
+                                    <th>Последнее обновление</th>
+                                    <th>Статус</th>
+                                    <th>Удалить</th>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Программист backend на C++/C#</a></td>
+                                    <td>от 100 000 руб</td>
+                                    <td>08.02.2019</td>
+                                    <td class="published">Опубликовано</td>
+                                    <td class="remove"><span class="remove-ikon">X</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Frontend-разработчик / Верстальщик</a></td>
+                                    <td>не указана</td>
+                                    <td>08.02.2019</td>
+                                    <td class="archive">В архиве</td>
+                                    <td class="remove"><span class="remove-ikon">X</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Web-программист</a></td>
+                                    <td>от 50 000 до 70 000 руб</td>
+                                    <td>08.02.2019</td>
+                                    <td class="published">Опубликовано</td>
+                                    <td class="remove"><span class="remove-ikon">X</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Разработчик SharePoint</a></td>
+                                    <td>не указана</td>
+                                    <td>08.02.2019</td>
+                                    <td class="draft">Черновик</td>
+                                    <td class="remove"><span class="remove-ikon">X</span></td>
+                                </tr>
+                            </table>
+                        </div>
 
-            //= html/_footer.html
+                    </div>
+                </main>
+            </div>
+
+
+            //= html/_lk-footer.html
             //= html/_scripts.html
         </div>
     </body>

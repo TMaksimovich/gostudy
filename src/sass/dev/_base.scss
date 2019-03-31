@@ -38,6 +38,10 @@ footer,
 header {
   flex: 0 0 auto;
 }
+.lk-wrapper {
+  display: flex;
+  flex: 1 0 auto;
+}
 
 a {
   text-decoration: none;
@@ -55,6 +59,10 @@ ul {
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+.container-full {
+  width: 100%;
+  padding: 0 30px;
 }
 .box {
   display: flex;

@@ -3,3 +3,4 @@
 //= parts/_form.js
 //= parts/_modal.js
 //= parts/_buttons.js
+//= parts/_dropdown.js
