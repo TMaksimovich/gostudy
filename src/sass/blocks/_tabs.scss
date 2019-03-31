@@ -1,0 +1,33 @@
+.lk-tabs {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.lk-tabs-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 22px 0 20px;
+}
+.tabs-content {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.tabs-caption-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
+    color: #A1A1A1;
+    margin: 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-bottom: 2px;
+    &.active {
+        color: $blue;
+        border-bottom: 1.5px solid $blue;
+    }
+}

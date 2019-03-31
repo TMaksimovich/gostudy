@@ -88,4 +88,22 @@
 		color: $blue;
 	}
 }
+.dropdown-menu--new {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 11px;
+		width: 8.19px;
+		height: 8.19px;
+		border-radius: 50%;
+		background-color: #DA1F13;
+	}
+	&.dropdown-menu--notification:after {
+		right: 16px;
+	}
+	&.dropdown-menu--message:after {
+		right: 11px;
+	}
+}
 
