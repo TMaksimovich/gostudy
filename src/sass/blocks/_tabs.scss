@@ -15,6 +15,23 @@
     &.active {
         display: block;
     }
+    .title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: normal;
+        color: $title-color;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 19px;
+        color: $title-color;
+        width: 383px;
+    }
+    .remove-btn {
+        margin-top: 40px;
+        padding: 9px 38px;
+    }
 }
 .tabs-caption-item {
     font-weight: 500;

@@ -1,4 +1,4 @@
-// Селект
+// Select
 (function($) {
   $(".custom-select").each(function() {
     var classes = $(this).attr("class"),
@@ -36,3 +36,25 @@
     $(this).parents(".custom-select").removeClass("opened");
   });
 }(jQuery));
+// end Select
+
+// custom input type file
+(function($) {
+  var fileInput  = $(".file-field"),
+      button     = $(".file-field-label"),
+      the_return = $(".file-return");
+
+  button.on( "keydown", function( event ) {
+      if ( event.which == 13 || event.which == 32 ) {
+          fileInput.focus();
+      }
+  });
+  button.on( "click", function( event ) {
+     fileInput.focus();
+     return false;
+  });
+  fileInput.on( "change", function( event ) {
+      the_return.html(this.value);
+  });
+}(jQuery));
+// end custom input type file

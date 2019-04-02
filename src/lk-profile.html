@@ -97,30 +97,32 @@
 
             <div class="lk-wrapper">
                 <aside class="sidebar">
-                    <div class="sidebar-profile">
-                        <div class="sidebar-avatar">
-                            <img src="img/avatar.svg" alt="Константин Константинопольский">
+                    <div class="sidebar-content fixed">
+                        <div class="sidebar-profile">
+                            <div class="sidebar-avatar">
+                                <img src="img/avatar.svg" alt="Константин Константинопольский">
+                            </div>
+                            <p class="sidebar-name">Константин Константинопольский</p>
+                            <p class="sidebar-email">konstantink@gmail.com</p>
                         </div>
-                        <p class="sidebar-name">Константин Константинопольский</p>
-                        <p class="sidebar-email">konstantink@gmail.com</p>
+                        <ul class="sidebar-menu">
+                            <li class="sidebar-item sidebar-item--active">
+                                <a href="lk-profile.html" class="sidebar-link">Профиль</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="lk-vacancy.html" class="sidebar-link">Вакансии</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="lk-resume.html" class="sidebar-link">Резюме</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Курсы</a>
+                            </li>
+                            <li class="sidebar-item sidebar-item--logout">
+                                <a href="#" class="sidebar-link">Выход</a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="sidebar-menu">
-                        <li class="sidebar-item sidebar-item--active">
-                            <a href="lk-profile.html" class="sidebar-link">Профиль</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="lk-vacancy.html" class="sidebar-link">Вакансии</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="lk-resume.html" class="sidebar-link">Резюме</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Курсы</a>
-                        </li>
-                        <li class="sidebar-item sidebar-item--logout">
-                            <a href="#" class="sidebar-link">Выход</a>
-                        </li>
-                    </ul>
                 </aside>
 
                 <main class="lk-main">
@@ -136,12 +138,78 @@
                         </div>
 
                         <div class="tabs-content active column column-full column-lk">
-                            1
+                            <form id="profileSettings" action="#" class="lk-profile-settings">
+                                <div class="avatar-field">
+                                    <div class="avatar-field-img">
+                                        <img src="img/avatar.svg" alt="">
+                                    </div>
+
+                                    <div class="field-group">
+                                        <div class="file-field-container">
+                                            <input class="file-field" id="file-field" type="file">
+                                            <label tabindex="0" for="file-field" class="file-field-label">Загрузить фотографию</label>
+                                        </div>
+                                        <p class="file-return"></p>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="column-third">
+                                        <div class="field-group">
+                                            <label for="profileName" class="label-field">Имя</label>
+                                            <input id="profileName" name="profileName" type="text" value="Константин">
+                                        </div>
+
+                                        <div class="field-group">
+                                            <label for="profileSex" class="label-field">Пол</label>
+                                            <select id="profileSex" name="profileSex">
+                                                <option value="Мужской">Мужской</option>
+                                                <option value="Женский">Женский</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="field-group">
+                                            <label for="profileEmail" class="label-field">E-mail</label>
+                                            <input id="profileEmail" name="profileEmail" type="email" value="konstantink@gmail.com">
+                                        </div>
+                                    </div>
+
+                                    <div class="column-third">
+                                        <div class="field-group">
+                                            <label for="profileSurname" class="label-field">Фамилия</label>
+                                            <input id="profileSurname" name="profileSurname" type="text" value="Константинопольский">
+                                        </div>
+
+                                        <div class="field-group">
+                                            <label for="profileAge" class="label-field">Возраст</label>
+                                            <select id="profileAge" name="profileAge">
+                                                <option value="Возраст 1">Возраст 1</option>
+                                                <option value="Возраст 2">Возраст 2</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="field-group">
+                                            <label for="profileTel" class="label-field">Телефон</label>
+                                            <input id="profileTel" name="profileTel" type="tel" value="+7 (911) 123-45-67">
+                                        </div>
+                                    </div>
+
+                                    <div class="column-third">
+                                        <div class="field-group">
+                                            <label for="profileCity" class="label-field">Город</label>
+                                            <input id="profileCity" name="profileCity" type="text" value="Санкт-Петербург">
+                                        </div>
+                                    </div>
+                                    <div class="column-full">
+                                        <input type="submit" value="Сохранить" class="btn">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
                         <div class="tabs-content column column-full column-lk">
                             <h2 class="title">Изменить пароль</h2>
-                            <form action="#" class="lk-form">
+                            <form id="changePassword" action="#" class="lk-form lk-form-change-password">
                                 <div class="field-group">
                                     <label class="label-field">Текущий пароль</label>
                                     <input id="passwordOld" name="passwordOld" type="password">
@@ -157,7 +225,7 @@
                                     <input id="passwordNewRepeat" name="passwordNewRepeat" type="password">
                                 </div>
 
-                                <input type="submit" value="Сохранить">
+                                <input type="submit" value="Сохранить" class="btn">
                             </form>
                         </div>
 
@@ -165,7 +233,7 @@
                             <h2 class="title">Удалить учётную запись</h2>
                             <p>Хотите удалить свою учетную запись?</p>
                             <p>Удаление учетной записи приведет к удалению всего ее содержимого и всех связанных с ней данных.</p>
-                            <button class="btn">Удалить</button>
+                            <button id="removeProfile" class="btn remove-btn">Удалить</button>
                         </div>
                     </div>
                 </main>

@@ -59,3 +59,7 @@
     height: 10px;
     background: url(../img/arrow-white.svg) 0 0 no-repeat;
 }
+.sidebar-content.fixed {
+    position: fixed;
+    width: 210px;
+}
