@@ -1,9 +1,9 @@
-.lk-tabs {
+.tabs {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-.lk-tabs-head {
+.tabs-head {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -28,9 +28,8 @@
         color: $title-color;
         width: 383px;
     }
-    .remove-btn {
+    button {
         margin-top: 40px;
-        padding: 9px 38px;
     }
 }
 .tabs-caption-item {

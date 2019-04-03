@@ -17,4 +17,14 @@
     &:focus {
     	background-color: $dark-blue;
     }
+    &.btn--light-blue {
+        background-color: $blue;
+        &:hover,
+        &:active {
+            background-color: $dark-blue;
+        }
+    }
+    &.btn--small {
+        width: 133px;
+    }
 }

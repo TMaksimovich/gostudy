@@ -67,6 +67,24 @@ ul {
 .box {
   display: flex;
 }
+.box-wrap {
+  flex-wrap: wrap;
+}
+.box-row {
+  margin: 0 -15px;
+}
+.box-head {
+    border-bottom: 0.75px solid $font-color;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+.box-body {
+    padding: 7px 0;
+    margin-bottom: 20px;
+}
+.box-footer {
+    padding-bottom: 20px;
+}
 
 input[type="search"] {
     -webkit-box-sizing: border-box;

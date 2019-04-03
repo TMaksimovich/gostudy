@@ -1,0 +1,25 @@
+.social {
+	text-align: center;
+}
+.social-list {
+	padding: 7px 0;
+	justify-content: center;
+}
+.social-item {
+	margin: 5px;
+}
+.social-link {
+	width: 30px;
+	height: 30px;
+	display: block;
+	font-size: 0;
+}
+.social-link--google {
+	background: url(../img/google.svg) 0 0 no-repeat;
+}
+.social-link--facebook {
+	background: url(../img/fb.svg) 0 0 no-repeat;
+}
+.social-link--vk {
+	background: url(../img/vk.svg) 0 0 no-repeat;
+}

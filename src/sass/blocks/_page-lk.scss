@@ -21,3 +21,50 @@
         margin: 0;
     }
 }
+
+.lk-form-change-password {
+    width: 210px;
+}
+.lk-form {
+    .field-group {
+        margin-bottom: 5px;
+        & + input[type="submit"] {
+            margin-top: 13px;
+        }
+    }
+}
+
+.lk-profile-settings {
+    padding-top: 20px;
+    .avatar-field-img {
+        margin-bottom: 20px;
+        margin-right: 25px;
+        width: 95px;
+        height: 95px;
+        display: inline-block;
+        vertical-align: middle;
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .avatar-field {
+        .field-group {
+            display: inline-block;
+            vertical-align: middle;
+            min-width: 500px;
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+    }
+    .column-settings {
+        padding: 0 15px;
+        width: 240px;
+        margin-bottom: 10px;
+    }
+    .column-settings-full {
+        padding: 0 15px;
+        width: 100%;
+    }
+}

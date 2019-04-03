@@ -1,9 +1,4 @@
 // Вакансия
-.box-head {
-    border-bottom: 0.75px solid $font-color;
-    padding: 15px 0;
-    justify-content: space-between;
-}
 .vacancy-company {
     font-weight: 500;
     font-size: 21px;
@@ -13,10 +8,6 @@
     font-weight: 700;
     font-size: 21px;
     color: $blue;
-}
-.box-body {
-    padding: 7px 0;
-    margin-bottom: 20px;
 }
 .vacancy-city,
 .vacancy-date {
@@ -65,9 +56,6 @@
 }
 .vacancy-favorite {
     text-align: right;
-}
-.box-footer {
-    padding-bottom: 20px;
 }
 .vacancy-favorite-link {
     display: inline-block;

@@ -33,8 +33,10 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
+        js: 'src/js/main-lk.js',
         libs: 'src/js/libs/**/*.*',
         style: 'src/sass/main.scss',
+        style: 'src/sass/main-lk.scss',
         img: 'src/img/**/*.*',
         svg: 'src/img/svg/*.svg',
         fonts: 'src/fonts/**/*.*'

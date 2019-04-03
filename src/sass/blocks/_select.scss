@@ -1,0 +1,76 @@
+select.custom-select {
+	display: none;
+}
+.custom-select-trigger {
+	font-weight: 500;
+	font-size: 14px;
+	color: $title-color;
+	position: relative;
+	padding-right: 15px;
+	cursor: pointer;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 3px;
+		margin: auto;
+		right: 0;
+		width: 10px;
+		height: 10px;
+		display: block;
+		background: url(../img/rectangle.svg) 0 0 no-repeat;
+	}
+}
+.custom-select.opened {
+	position: relative;
+	.custom-options {
+		display: block;
+	}
+}
+
+.custom-options {
+	display: none;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	width: 100%;
+	min-width: 150px;
+	height: 150px;
+	background: #F6F6F6;
+	border: 1px solid #EFEFEF;
+	border-radius: 7px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: normal;
+	color: $title-color;
+	padding: 10px 7px;
+	overflow-y: auto;
+}
+.custom-option {
+	padding-bottom: 10px;
+	cursor: pointer;
+	&.selection,
+	&:hover {
+		color: $blue;
+	}
+}
+
+.custom-select--bg {
+	background-color: $light-gray;
+	border-radius: 5px;
+	padding: 8px 10px;
+	margin: 5px 0;
+    .custom-select-trigger {
+		font-weight: 300;
+	    font-size: 12px;
+	    line-height: 17px;
+	    display: block;
+    }
+    .custom-options {
+	    top: 33px;
+	    color: $title-color;
+	    background: $light-gray;
+	    font-size: 12px;
+	    font-weight: 300;
+	}
+}

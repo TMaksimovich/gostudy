@@ -34,6 +34,7 @@
     $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
     $(this).addClass("selection");
     $(this).parents(".custom-select").removeClass("opened");
+    $(this).parents(".custom-select--text").find(".custom-select-trigger").text($(this).text());
   });
 }(jQuery));
 // end Select
