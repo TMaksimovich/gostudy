@@ -1,6 +1,6 @@
 // Модальные окна
 (function($) {
-  $('.header-links-popap, .form-link').magnificPopup({
+  $('.btn-modal, .form-link').magnificPopup({
     type: 'inline',
     preloader: false,
     focus: '#name',

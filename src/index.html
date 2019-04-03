@@ -6,10 +6,653 @@
     </head>
 
     <body>
+        <header>
+            <div class="container">
+                <div class="header-box box">
+                    <div class="logo">
+                        <a href="/" class="logo-link"><span>Go</span>Study</a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="vacancy.html" class="menu-link">Вакансии</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <form role="search" method="get" action="#" class="search-form">
+                            <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
+                            <button class="search-btn" type="submit">Найти</button>
+                        </form>
+                    </div>
+                    <div class="header-links">
+                        <ul class="header-links-list">
+                            <li class="header-links-item">
+                                <a href="#loginForm" class="header-links-login btn-modal">Войти</a>
+                            </li>
+                            <li class="header-links-item">
+                                <a href="#registrationForm" class="header-links-registration btn-modal">Регистрация</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="promo">
+        	<div class="container">
+        		<h1 class="promo-title">Платформа для вашего обучения и развития</h1>
+        		<a href="#registrationForm" class="btn btn-white promo-btn btn-modal">Присоединиться</a>
+        	</div>
+        </div>
+
+        <section class="about">
+        	<div class="container">
+	        	<h2 class="section-title section-title--blue">О чём наш сайт</h2>
+	        	<p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	        </div>
+        </section>
+
+		<section class="for-him white-bg">
+			<div class="container">
+				<div class="box">
+					<div class="column-half">
+						<h2 class="section-title section-title--blue section-title--left">Кому мы будем интересны</h2>
+					</div>
+					<div class="column-half">
+						<div class="slider slider-vertical">
+							<div class="slider-vertical-item">
+								<div class="slider-vertical-photo">
+									<img src="img/students.svg" alt="">
+								</div>
+								<p class="slider-vertical-desc">Студентам и выпускникам</p>
+							</div>
+							<div class="slider-vertical-item">
+								<div class="slider-vertical-photo">
+									<img src="img/students.svg" alt="">
+								</div>
+								<p class="slider-vertical-desc">Студентам и выпускникам 2</p>
+							</div>
+							<div class="slider-vertical-item">
+								<div class="slider-vertical-photo">
+									<img src="img/students.svg" alt="">
+								</div>
+								<p class="slider-vertical-desc">Студентам и выпускникам 3</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="blue-bg">
+			<section class="courses">
+				<div class="container">
+					<h2 class="section-title section-title--white">Популярные курсы</h2>
+					<div class="box box-row box-wrap">
+						<div class="column column-third">
+							<div class="card">
+								<div class="card-photo">
+									<img src="img/card_1.jpg" alt="">
+								</div>
+								<div class="card-head">
+									<h3 class="card-title">
+										<a href="#">Android разработка с нуля до профессиона...</a>
+									</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+								</div>
+								<div class="card-footer box">
+									<p class="small-text">Москва</p>
+									<p class="large-text blue">20 000 руб</p>
+								</div>
+							</div>
+						</div>
+						<div class="column column-third">
+							<div class="card">
+								<div class="card-photo">
+									<img src="img/card_2.jpg" alt="">
+								</div>
+								<div class="card-head">
+									<h3 class="card-title">
+										<a href="#">An Entire MBA in 1 Course</a>
+									</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+								<div class="card-footer box">
+									<p class="small-text">Online</p>
+									<p class="large-text blue">20 000 руб</p>
+								</div>
+							</div>
+						</div>
+						<div class="column column-third">
+							<div class="card">
+								<div class="card-photo">
+									<img src="img/card_3.jpg" alt="">
+								</div>
+								<div class="card-head">
+									<h3 class="card-title">
+										<a href="#">Тестирование ПО для начинающих. Web, Mo...</a>
+									</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v.</p>
+								</div>
+								<div class="card-footer box">
+									<p class="small-text">Санкт-Петербург</p>
+									<p class="large-text blue">20 000 руб</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn btn--dark-blue">Смотреть все курсы</a>
+				</div>
+			</section>
+
+			<div class="partners">
+				<div class="container">
+					<div class="box">
+						<div class="column-half">
+							<h2 class="section-title section-title--white section-title--left">Сотрудничаем с ведущими вузами</h2>
+						</div>
+						<div class="column-half">
+							<ul class="logo-list">
+								<li class="logo-item">
+									<img src="img/partners_1.svg" alt="">
+								</li>
+								<li class="logo-item">
+									<img src="img/partners_2.svg" alt="">
+								</li>
+								<li class="logo-item">
+									<img src="img/partners_3.svg" alt="">
+								</li>
+								<li class="logo-item">
+									<img src="img/partners_1.svg" alt="">
+								</li>
+								<li class="logo-item">
+									<img src="img/partners_2.svg" alt="">
+								</li>
+								<li class="logo-item">
+									<img src="img/partners_3.svg" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gray-bg">
+			<section class="vacancy-main">
+	        	<div class="container">
+		        	<h2 class="section-title section-title--blue">Актуальные вакансии</h2>
+		        	<div class="tabs">
+                        <div class="tabs-head">
+                            <ul class="tabs-caption">
+                                <li class="tabs-caption-item active">IT cфера</li>
+                                <li class="tabs-caption-item">Экономика</li>
+                                <li class="tabs-caption-item">Производство</li>
+                                <li class="tabs-caption-item">Юриспруденция</li>
+                                <li class="tabs-caption-item">Наука</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabs-content active">
+							<div class="box box-row box-wrap">
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+		                    </div>
+                        </div>
+
+                        <div class="tabs-content">
+							<div class="box box-row box-wrap">
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+		                    </div>
+                        </div>
+
+                        <div class="tabs-content">
+							<div class="box box-row box-wrap">
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+		                    </div>
+                        </div>
+
+                        <div class="tabs-content">
+							<div class="box box-row box-wrap">
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+		                    </div>
+                        </div>
+
+                        <div class="tabs-content">
+							<div class="box box-row box-wrap">
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-third">
+									<div class="card">
+										<div class="card-head">
+											<h3 class="card-title card-title--blue">
+												<a href="#">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between">
+		                                        <div class="card-subtitle">
+		                                            <p>Ростелеком</p>
+		                                        </div>
+		                                        <div class="small-text">
+		                                            <p>Москва</p>
+		                                        </div>
+		                                    </div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+										</div>
+										<div class="card-footer box">
+											<p class="medium-text">16 марта 2019</p>
+											<p class="large-text blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+		                    </div>
+                        </div>
+                    </div>
+		        </div>
+	        </section>
+
+	        <div class="action">
+	        	<div class="container">
+	        		<ul class="action-list">
+	        			<li class="action-item"><span>2000+</span> курсов</li>
+	        			<li class="action-item"><span>4000+</span> вакансий и стажировок</li>
+	        		</ul>
+
+	        		<div class="action-desc">
+	        			<p>Регистрируйся и получай новые навыки</p>
+	        			<a href="#registrationForm" class="btn btn-transparent btn-modal">Зарегистрироваться</a>
+	        		</div>
+	        	</div>
+	        </div>
+        </div>
+
+        <section class="feedback light-gray-bg">
+        	<div class="container">
+        		<h2 class="section-title section-title--blue">Отзывы наших студентов</h2>
+        		<div class="slider slider-two-columns">
+        			<div class="slider-two-columns-item">
+						<div class="slider-two-columns-photo">
+							<img src="img/feedback.jpg" alt="">
+						</div>
+						<div class="slider-two-columns-desc">
+							<h3 class="title title--light-blue">Василий Иванов</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+
+					<div class="slider-two-columns-item">
+						<div class="slider-two-columns-photo">
+							<img src="img/feedback.jpg" alt="">
+						</div>
+						<div class="slider-two-columns-desc">
+							<h3 class="title title--light-blue">Василий Иванов</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+
+					<div class="slider-two-columns-item">
+						<div class="slider-two-columns-photo">
+							<img src="img/feedback.jpg" alt="">
+						</div>
+						<div class="slider-two-columns-desc">
+							<h3 class="title title--light-blue">Василий Иванов</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
 
 
 
         //= html/_footer.html
+        //= html/_form.html
         //= html/_scripts.html
     </body>
 </html>
