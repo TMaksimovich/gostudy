@@ -38,45 +38,55 @@
             </div>
         </header>
 
-        <div class="promo">
+        <div class="promo" style="background-image: url(img/promo.jpg);">
         	<div class="container">
-        		<h1 class="promo-title">Платформа для вашего обучения и развития</h1>
-        		<a href="#registrationForm" class="btn btn-white promo-btn btn-modal">Присоединиться</a>
+        		<div class="promo-box box box-wrap">
+        			<h1 class="promo-title">Платформа для вашего обучения и развития</h1>
+        			<a href="#registrationForm" class="btn btn-white promo-btn btn-modal">Присоединиться</a>
+        		</div>
         	</div>
         </div>
 
-        <section class="about">
+        <div class="divider-1 divider--white"></div>
+
+        <section class="section about white-bg">
         	<div class="container">
-	        	<h2 class="section-title section-title--blue">О чём наш сайт</h2>
-	        	<p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        		<div class="box box-wrap box-row box-center">
+        			<div class="column column-eight">
+        				<h2 class="section-title section-title--blue">О чём наш сайт</h2>
+	        			<p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        			</div>
+        		</div>
 	        </div>
         </section>
 
-		<section class="for-him white-bg">
+		<section class="section for-him white-bg">
 			<div class="container">
-				<div class="box">
-					<div class="column-half">
-						<h2 class="section-title section-title--blue section-title--left">Кому мы будем интересны</h2>
-					</div>
-					<div class="column-half">
-						<div class="slider slider-vertical">
-							<div class="slider-vertical-item">
-								<div class="slider-vertical-photo">
-									<img src="img/students.svg" alt="">
+				<div class="box box-row box-center">
+					<div class="column column-eight box box-center--vertical">
+						<div class="column-half">
+							<h2 class="section-title section-title--blue section-title--left">Кому мы будем интересны</h2>
+						</div>
+						<div class="column-half">
+							<div class="slider slider-vertical">
+								<div class="slider-vertical-item">
+									<div class="slider-vertical-photo">
+										<img src="img/students.svg" alt="">
+									</div>
+									<p class="slider-vertical-desc">Студентам и выпускникам</p>
 								</div>
-								<p class="slider-vertical-desc">Студентам и выпускникам</p>
-							</div>
-							<div class="slider-vertical-item">
-								<div class="slider-vertical-photo">
-									<img src="img/students.svg" alt="">
+								<div class="slider-vertical-item">
+									<div class="slider-vertical-photo">
+										<img src="img/students.svg" alt="">
+									</div>
+									<p class="slider-vertical-desc">Студентам и выпускникам 2</p>
 								</div>
-								<p class="slider-vertical-desc">Студентам и выпускникам 2</p>
-							</div>
-							<div class="slider-vertical-item">
-								<div class="slider-vertical-photo">
-									<img src="img/students.svg" alt="">
+								<div class="slider-vertical-item">
+									<div class="slider-vertical-photo">
+										<img src="img/students.svg" alt="">
+									</div>
+									<p class="slider-vertical-desc">Студентам и выпускникам 3</p>
 								</div>
-								<p class="slider-vertical-desc">Студентам и выпускникам 3</p>
 							</div>
 						</div>
 					</div>
@@ -84,65 +94,81 @@
 			</div>
 		</section>
 
-		<div class="blue-bg">
-			<section class="courses">
+		<div class="divider-2 divider--white"></div>
+
+		<div class="gradient-bg--vertical">
+			<section class="section courses">
 				<div class="container">
 					<h2 class="section-title section-title--white">Популярные курсы</h2>
-					<div class="box box-row box-wrap">
-						<div class="column column-third">
+					<div class="box box-row box-row--thin box-wrap">
+						<div class="column column-third column--thin box">
 							<div class="card">
 								<div class="card-photo">
-									<img src="img/card_1.jpg" alt="">
+									<a href="#">
+										<img src="img/card_1.jpg" alt="">
+									</a>
 								</div>
-								<div class="card-head">
-									<h3 class="card-title">
-										<a href="#">Android разработка с нуля до профессиона...</a>
-									</h3>
-								</div>
-								<div class="card-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-								</div>
-								<div class="card-footer box">
-									<p class="small-text">Москва</p>
-									<p class="large-text blue">20 000 руб</p>
+								<div class="card-wrapper">
+									<div class="card-head card-head--fix-height">
+										<h3 class="card-title">
+											<a href="#">Android разработка с нуля до профессиона...</a>
+										</h3>
+									</div>
+									<div class="card-body card-body--fix-height">
+										<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a></p>
+									</div>
+									<div class="card-footer box box-between">
+										<p class="card-small-text card-dark-gray-text">Москва</p>
+										<p class="card-large-text card-title--bold card-title--blue">20 000 руб</p>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="column column-third">
+
+						<div class="column column-third column--thin box">
 							<div class="card">
 								<div class="card-photo">
-									<img src="img/card_2.jpg" alt="">
+									<a href="#">
+										<img src="img/card_2.jpg" alt="">
+									</a>
 								</div>
-								<div class="card-head">
-									<h3 class="card-title">
-										<a href="#">An Entire MBA in 1 Course</a>
-									</h3>
-								</div>
-								<div class="card-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								</div>
-								<div class="card-footer box">
-									<p class="small-text">Online</p>
-									<p class="large-text blue">20 000 руб</p>
+								<div class="card-wrapper">
+									<div class="card-head card-head--fix-height">
+										<h3 class="card-title">
+											<a href="#">An Entire MBA in 1 Course</a>
+										</h3>
+									</div>
+									<div class="card-body card-body--fix-height">
+										<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
+									</div>
+									<div class="card-footer box box-between">
+										<p class="card-small-text card-dark-gray-text">Online</p>
+										<p class="card-large-text card-title--bold card-title--blue">20 000 руб</p>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="column column-third">
+
+						<div class="column column-third column--thin box">
 							<div class="card">
 								<div class="card-photo">
-									<img src="img/card_3.jpg" alt="">
+									<a href="#">
+										<img src="img/card_3.jpg" alt="">
+									</a>
 								</div>
-								<div class="card-head">
-									<h3 class="card-title">
-										<a href="#">Тестирование ПО для начинающих. Web, Mo...</a>
-									</h3>
-								</div>
-								<div class="card-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v.</p>
-								</div>
-								<div class="card-footer box">
-									<p class="small-text">Санкт-Петербург</p>
-									<p class="large-text blue">20 000 руб</p>
+								<div class="card-wrapper">
+									<div class="card-head card-head--fix-height">
+										<h3 class="card-title">
+											<a href="#">Тестирование ПО для начинающих. Web, Mo...</a>
+										</h3>
+									</div>
+									<div class="card-body card-body--fix-height">
+										<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v.</a></p>
+									</div>
+									<div class="card-footer box box-between">
+										<p class="card-small-text card-dark-gray-text">Санкт-Петербург</p>
+										<p class="card-large-text card-title--bold card-title--blue">20 000 руб</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -151,14 +177,14 @@
 				</div>
 			</section>
 
-			<div class="partners">
+			<div class="section partners">
 				<div class="container">
-					<div class="box">
-						<div class="column-half">
+					<div class="box box-between box-center--vertical">
+						<div class="column-third">
 							<h2 class="section-title section-title--white section-title--left">Сотрудничаем с ведущими вузами</h2>
 						</div>
-						<div class="column-half">
-							<ul class="logo-list">
+						<div class="column-eight">
+							<ul class="logo-list box box-wrap box-center--vertical">
 								<li class="logo-item">
 									<img src="img/partners_1.svg" alt="">
 								</li>
@@ -184,8 +210,10 @@
 			</div>
 		</div>
 
-		<div class="gray-bg">
-			<section class="vacancy-main">
+		<div class="divider-3 divider--dark-gray"></div>
+
+		<div class="dark-gray-bg">
+			<section class="section vacancy-main">
 	        	<div class="container">
 		        	<h2 class="section-title section-title--blue">Актуальные вакансии</h2>
 		        	<div class="tabs">
@@ -202,396 +230,336 @@
                         <div class="tabs-content active">
 							<div class="box box-row box-wrap">
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="vacancy-single.html">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
-		                    </div>
+							</div>
                         </div>
 
                         <div class="tabs-content">
 							<div class="box box-row box-wrap">
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
-		                    </div>
+							</div>
                         </div>
 
                         <div class="tabs-content">
 							<div class="box box-row box-wrap">
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
-		                    </div>
+							</div>
                         </div>
 
                         <div class="tabs-content">
 							<div class="box box-row box-wrap">
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
-		                    </div>
+							</div>
                         </div>
 
                         <div class="tabs-content">
 							<div class="box box-row box-wrap">
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="column column-third">
-									<div class="card">
+									<div class="card card-wrapper">
 										<div class="card-head">
-											<h3 class="card-title card-title--blue">
-												<a href="#">Веб-дизайнер</a>
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
 											</h3>
 										</div>
 										<div class="card-body">
-											<div class="box box-between">
-		                                        <div class="card-subtitle">
-		                                            <p>Ростелеком</p>
-		                                        </div>
-		                                        <div class="small-text">
-		                                            <p>Москва</p>
-		                                        </div>
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
 		                                    </div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										<div class="card-footer box">
-											<p class="medium-text">16 марта 2019</p>
-											<p class="large-text blue">50 000 руб</p>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
 										</div>
 									</div>
 								</div>
-		                    </div>
+							</div>
                         </div>
                     </div>
 		        </div>
@@ -612,7 +580,7 @@
 	        </div>
         </div>
 
-        <section class="feedback light-gray-bg">
+        <section class="section feedback light-gray-bg">
         	<div class="container">
         		<h2 class="section-title section-title--blue">Отзывы наших студентов</h2>
         		<div class="slider slider-two-columns">
@@ -622,7 +590,7 @@
 						</div>
 						<div class="slider-two-columns-desc">
 							<h3 class="title title--light-blue">Василий Иванов</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</div>
 					</div>
 

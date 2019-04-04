@@ -1,0 +1,27 @@
+.divider-1 {
+    width: 110%;
+    height: 80px;
+    border-radius: 50% 50% 0 0;
+    margin-top: -30px;
+    position: relative;
+    margin-left: -5%;
+}
+
+.divider-2 {
+    position: relative;
+    width: 110%;
+    height: 130px;
+    margin-top: -36px;
+    margin-left: -5%;
+    border-radius: 0 0 25% 70%;
+    transform: rotate(2deg);
+    & + div,
+    & + section {
+        padding-top: 128px;
+        margin-top: -94px;
+    }
+}
+
+.divider--white {
+    background-color: #fff;
+}

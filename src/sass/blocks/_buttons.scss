@@ -29,3 +29,13 @@
         width: 133px;
     }
 }
+
+.btn-white {
+    background-color: #fff;
+    color: $dark-blue;
+    &:hover,
+    &:active {
+        background-color: $blue;
+        color: #fff;
+    }
+}

@@ -12,6 +12,9 @@
 }
 .tabs-content {
     display: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: $title-color;
     &.active {
         display: block;
     }
@@ -21,12 +24,6 @@
         line-height: normal;
         color: $title-color;
         margin-top: 20px;
-    }
-    p {
-        font-size: 16px;
-        line-height: 19px;
-        color: $title-color;
-        width: 383px;
     }
     button {
         margin-top: 40px;
