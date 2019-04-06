@@ -19,6 +19,7 @@
                         </ul>
                     </nav>
                     <div class="search">
+                    	<span class="search-toggle"></span>
                         <form role="search" method="get" action="#" class="search-form">
                             <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
                             <button class="search-btn" type="submit">Найти</button>
@@ -31,6 +32,24 @@
                             </li>
                             <li class="header-links-item">
                                 <a href="#registrationForm" class="header-links-registration btn-modal">Регистрация</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-menu">
+                    	<span id="toggle-menu" class="toggle-menu"></span>
+                        <ul class="mobile-menu-list">
+                            <li class="mobile-menu-item">
+                            	<a href="vacancy.html" class="mobile-menu-link">Вакансии</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                            	<a href="#" class="mobile-menu-link">Контакты</a>
+                            </li>
+                            <li class="mobile-menu-item mobile-menu-item--divider">
+                                <a href="#loginForm" class="mobile-menu-link btn-modal">Войти</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a href="#registrationForm" class="mobile-menu-link btn-modal">Регистрация</a>
                             </li>
                         </ul>
                     </div>
@@ -52,7 +71,7 @@
         <section class="section about white-bg">
         	<div class="container">
         		<div class="box box-wrap box-row box-center">
-        			<div class="column column-eight">
+        			<div class="column column-xs-full column-eight">
         				<h2 class="section-title section-title--blue">О чём наш сайт</h2>
 	        			<p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         			</div>
@@ -63,12 +82,12 @@
 		<section class="section for-him white-bg">
 			<div class="container">
 				<div class="box box-row box-center">
-					<div class="column column-eight box box-center--vertical">
-						<div class="column-half">
+					<div class="column column-xs-full column-eight box box-center--vertical box-wrap">
+						<div class="column-xs-full column-half">
 							<h2 class="section-title section-title--blue section-title--left">Кому мы будем интересны</h2>
 						</div>
-						<div class="column-half">
-							<div class="slider slider-vertical">
+						<div class="column-xs-full column-half">
+							<div class="slider slider-vertical no-dots">
 								<div class="slider-vertical-item">
 									<div class="slider-vertical-photo">
 										<img src="img/students.svg" alt="">
@@ -101,7 +120,7 @@
 				<div class="container">
 					<h2 class="section-title section-title--white">Популярные курсы</h2>
 					<div class="box box-row box-row--thin box-wrap">
-						<div class="column column-third column--thin box">
+						<div class="column column-xs-full column-third column--thin box">
 							<div class="card">
 								<div class="card-photo">
 									<a href="#">
@@ -125,7 +144,7 @@
 							</div>
 						</div>
 
-						<div class="column column-third column--thin box">
+						<div class="column column-xs-full column-third column--thin box">
 							<div class="card">
 								<div class="card-photo">
 									<a href="#">
@@ -149,7 +168,7 @@
 							</div>
 						</div>
 
-						<div class="column column-third column--thin box">
+						<div class="column column-xs-full column-third column--thin box">
 							<div class="card">
 								<div class="card-photo">
 									<a href="#">
@@ -180,10 +199,10 @@
 			<div class="section partners">
 				<div class="container">
 					<div class="box box-between box-center--vertical">
-						<div class="column-third">
+						<div class="column-xs-full column-third">
 							<h2 class="section-title section-title--white section-title--left">Сотрудничаем с ведущими вузами</h2>
 						</div>
-						<div class="column-eight">
+						<div class="column-xs-full column-eight">
 							<ul class="logo-list box box-wrap box-center--vertical">
 								<li class="logo-item">
 									<img src="img/partners_1.svg" alt="">
@@ -210,14 +229,14 @@
 			</div>
 		</div>
 
-		<div class="divider-3 divider--dark-gray"></div>
+		<div class="divider-3"></div>
 
 		<div class="dark-gray-bg">
 			<section class="section vacancy-main">
 	        	<div class="container">
 		        	<h2 class="section-title section-title--blue">Актуальные вакансии</h2>
 		        	<div class="tabs">
-                        <div class="tabs-head">
+                        <div class="tabs-head tabs-head--center">
                             <ul class="tabs-caption">
                                 <li class="tabs-caption-item active">IT cфера</li>
                                 <li class="tabs-caption-item">Экономика</li>
@@ -228,8 +247,8 @@
                         </div>
 
                         <div class="tabs-content active">
-							<div class="box box-row box-wrap">
-								<div class="column column-third">
+							<div class="box box-row box-row--wide box-wrap">
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -250,7 +269,7 @@
 									</div>
 								</div>
 
-								<div class="column column-third">
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -271,74 +290,7 @@
 									</div>
 								</div>
 
-								<div class="column column-third">
-									<div class="card card-wrapper">
-										<div class="card-head">
-											<h3 class="card-title card-title--medium card-title--blue">
-												<a href="section partners">Веб-дизайнер</a>
-											</h3>
-										</div>
-										<div class="card-body">
-											<div class="box box-between box-center--vertical">
-		                                        <p class="card-subtitle">Ростелеком</p>
-		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
-		                                    </div>
-											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-										<div class="card-footer box box-between">
-											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
-											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
-										</div>
-									</div>
-								</div>
-							</div>
-                        </div>
-
-                        <div class="tabs-content">
-							<div class="box box-row box-wrap">
-								<div class="column column-third">
-									<div class="card card-wrapper">
-										<div class="card-head">
-											<h3 class="card-title card-title--medium card-title--blue">
-												<a href="section partners">Веб-дизайнер</a>
-											</h3>
-										</div>
-										<div class="card-body">
-											<div class="box box-between box-center--vertical">
-		                                        <p class="card-subtitle">Ростелеком</p>
-		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
-		                                    </div>
-											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-										<div class="card-footer box box-between">
-											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
-											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="column column-third">
-									<div class="card card-wrapper">
-										<div class="card-head">
-											<h3 class="card-title card-title--medium card-title--blue">
-												<a href="section partners">Веб-дизайнер</a>
-											</h3>
-										</div>
-										<div class="card-body">
-											<div class="box box-between box-center--vertical">
-		                                        <p class="card-subtitle">Ростелеком</p>
-		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
-		                                    </div>
-											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-										<div class="card-footer box box-between">
-											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
-											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="column column-third">
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -362,8 +314,8 @@
                         </div>
 
                         <div class="tabs-content">
-							<div class="box box-row box-wrap">
-								<div class="column column-third">
+							<div class="box box-row box-row--wide box-wrap">
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -384,7 +336,7 @@
 									</div>
 								</div>
 
-								<div class="column column-third">
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -405,74 +357,7 @@
 									</div>
 								</div>
 
-								<div class="column column-third">
-									<div class="card card-wrapper">
-										<div class="card-head">
-											<h3 class="card-title card-title--medium card-title--blue">
-												<a href="section partners">Веб-дизайнер</a>
-											</h3>
-										</div>
-										<div class="card-body">
-											<div class="box box-between box-center--vertical">
-		                                        <p class="card-subtitle">Ростелеком</p>
-		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
-		                                    </div>
-											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-										<div class="card-footer box box-between">
-											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
-											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
-										</div>
-									</div>
-								</div>
-							</div>
-                        </div>
-
-                        <div class="tabs-content">
-							<div class="box box-row box-wrap">
-								<div class="column column-third">
-									<div class="card card-wrapper">
-										<div class="card-head">
-											<h3 class="card-title card-title--medium card-title--blue">
-												<a href="section partners">Веб-дизайнер</a>
-											</h3>
-										</div>
-										<div class="card-body">
-											<div class="box box-between box-center--vertical">
-		                                        <p class="card-subtitle">Ростелеком</p>
-		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
-		                                    </div>
-											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-										<div class="card-footer box box-between">
-											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
-											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="column column-third">
-									<div class="card card-wrapper">
-										<div class="card-head">
-											<h3 class="card-title card-title--medium card-title--blue">
-												<a href="section partners">Веб-дизайнер</a>
-											</h3>
-										</div>
-										<div class="card-body">
-											<div class="box box-between box-center--vertical">
-		                                        <p class="card-subtitle">Ростелеком</p>
-		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
-		                                    </div>
-											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-										<div class="card-footer box box-between">
-											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
-											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="column column-third">
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -496,8 +381,8 @@
                         </div>
 
                         <div class="tabs-content">
-							<div class="box box-row box-wrap">
-								<div class="column column-third">
+							<div class="box box-row box-row--wide box-wrap">
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -518,7 +403,7 @@
 									</div>
 								</div>
 
-								<div class="column column-third">
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -539,7 +424,141 @@
 									</div>
 								</div>
 
-								<div class="column column-third">
+								<div class="column column-xs-full column--wide column-third">
+									<div class="card card-wrapper">
+										<div class="card-head">
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
+		                                    </div>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										</div>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div>
+
+                        <div class="tabs-content">
+							<div class="box box-row box-row--wide box-wrap">
+								<div class="column column-xs-full column--wide column-third">
+									<div class="card card-wrapper">
+										<div class="card-head">
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
+		                                    </div>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										</div>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-xs-full column--wide column-third">
+									<div class="card card-wrapper">
+										<div class="card-head">
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
+		                                    </div>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										</div>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-xs-full column--wide column-third">
+									<div class="card card-wrapper">
+										<div class="card-head">
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
+		                                    </div>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										</div>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div>
+
+                        <div class="tabs-content">
+							<div class="box box-row box-row--wide box-wrap">
+								<div class="column column-xs-full column--wide column-third">
+									<div class="card card-wrapper">
+										<div class="card-head">
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
+		                                    </div>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										</div>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-xs-full column--wide column-third">
+									<div class="card card-wrapper">
+										<div class="card-head">
+											<h3 class="card-title card-title--medium card-title--blue">
+												<a href="section partners">Веб-дизайнер</a>
+											</h3>
+										</div>
+										<div class="card-body">
+											<div class="box box-between box-center--vertical">
+		                                        <p class="card-subtitle">Ростелеком</p>
+		                                        <p class="card-small-text card-dark-gray-text">Москва</p>
+		                                    </div>
+											<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										</div>
+										<div class="card-footer box box-between">
+											<p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
+											<p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="column column-xs-full column--wide column-third">
 									<div class="card card-wrapper">
 										<div class="card-head">
 											<h3 class="card-title card-title--medium card-title--blue">
@@ -565,55 +584,65 @@
 		        </div>
 	        </section>
 
-	        <div class="action">
-	        	<div class="container">
-	        		<ul class="action-list">
-	        			<li class="action-item"><span>2000+</span> курсов</li>
-	        			<li class="action-item"><span>4000+</span> вакансий и стажировок</li>
-	        		</ul>
+			<div class="action">
+		        <div class="container">
+		        	<div class="action-box box">
+		        		<div class="action-wrapper">
+			        		<ul class="action-list">
+			        			<li class="action-item"><span>2000+</span>курсов</li>
+			        			<li class="action-item"><span>4000+</span>вакансий и стажировок</li>
+			        		</ul>
+		        		</div>
 
-	        		<div class="action-desc">
-	        			<p>Регистрируйся и получай новые навыки</p>
-	        			<a href="#registrationForm" class="btn btn-transparent btn-modal">Зарегистрироваться</a>
-	        		</div>
-	        	</div>
+		        		<div class="action-desc">
+		        			<p>Регистрируйся и получай новые навыки</p>
+		        			<a href="#registrationForm" class="btn btn-transparent btn-modal">Зарегистрироваться</a>
+		        		</div>
+		        	</div>
+		        </div>
 	        </div>
         </div>
+
+        <div class="divider-4 divider-light-gray"></div>
 
         <section class="section feedback light-gray-bg">
         	<div class="container">
         		<h2 class="section-title section-title--blue">Отзывы наших студентов</h2>
-        		<div class="slider slider-two-columns">
-        			<div class="slider-two-columns-item">
-						<div class="slider-two-columns-photo">
-							<img src="img/feedback.jpg" alt="">
-						</div>
-						<div class="slider-two-columns-desc">
-							<h3 class="title title--light-blue">Василий Иванов</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						</div>
-					</div>
+        		<div class="box box-wrap box-row box-center">
+        			<div class="column column-xs-full column-eight">
+		        		<div class="slider slider-two-columns">
+		        			<div class="slider-two-columns-item">
+								<div class="slider-two-columns-photo">
+									<img src="img/feedback.jpg" alt="">
+								</div>
+								<div class="slider-two-columns-desc">
+									<h3 class="title title--light-blue">Василий Иванов</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+							</div>
 
-					<div class="slider-two-columns-item">
-						<div class="slider-two-columns-photo">
-							<img src="img/feedback.jpg" alt="">
-						</div>
-						<div class="slider-two-columns-desc">
-							<h3 class="title title--light-blue">Василий Иванов</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						</div>
-					</div>
+							<div class="slider-two-columns-item">
+								<div class="slider-two-columns-photo">
+									<img src="img/feedback.jpg" alt="">
+								</div>
+								<div class="slider-two-columns-desc">
+									<h3 class="title title--light-blue">Василий Иванов</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+							</div>
 
-					<div class="slider-two-columns-item">
-						<div class="slider-two-columns-photo">
-							<img src="img/feedback.jpg" alt="">
-						</div>
-						<div class="slider-two-columns-desc">
-							<h3 class="title title--light-blue">Василий Иванов</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						</div>
-					</div>
-        		</div>
+							<div class="slider-two-columns-item">
+								<div class="slider-two-columns-photo">
+									<img src="img/feedback.jpg" alt="">
+								</div>
+								<div class="slider-two-columns-desc">
+									<h3 class="title title--light-blue">Василий Иванов</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+							</div>
+		        		</div>
+		        	</div>
+		        </div>
         	</div>
         </section>
 

@@ -99,7 +99,9 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
+.slider {
+    padding-bottom: 50px;
+}
 .slider-vertical {
     padding: 0 25px;
 }
@@ -150,4 +152,112 @@
 .slick-next {
     right: 0;
     transform: rotate(47deg);
+}
+
+.slider-two-columns {
+    padding-left: 50px;
+    padding-right: 50px;
+    .title {
+        margin-top: 0;
+        margin-bottom: 7px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: normal;
+    }
+    p {
+        font-size: 15px;
+        line-height: 20px;
+        color: #3b3b3b;
+    }
+}
+.slick-initialized {
+    .slider-two-columns-item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.slider-two-columns-photo {
+    width: 148px;
+    height: 148px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+.slider-two-columns-desc {
+    width: calc(100% - 148px);
+    padding-left: 30px;
+}
+.slick-dots {
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 8px;
+    }
+    button {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #A1A1A1;
+        font-size: 0;
+        border: none;
+        padding: 0;
+        outline: none;
+    }
+    .slick-active button {
+        background-color: $blue;
+    }
+}
+.no-dots {
+    padding-bottom: 0;
+    & .slick-dots {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider-vertical-photo {
+        width: 110px;
+        height: 110px;
+    }
+    .slider-two-columns {
+        padding-right: 25px;
+        padding-left: 25px;
+        .slick-arrow {
+            top: 36px;
+            margin: 5px 0;
+        }
+        .slick-next {
+            right: 8px;
+        }
+        .slick-prev {
+            left: 8px;
+        }
+    }
+    .slider-two-columns-photo {
+        width: 110px;
+        height: 110px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .slider-two-columns-desc {
+        width: 100%;
+        padding-left: 0;
+        p {
+            text-align: left;
+        }
+    }
+    .slider-two-columns-item {
+        text-align: center;
+    }
 }

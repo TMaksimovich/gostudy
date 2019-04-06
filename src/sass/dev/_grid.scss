@@ -19,6 +19,9 @@
   margin: 0 -30px;
   padding: 0 90px;
 }
+.box-row--wide {
+  margin: 0 -5px;
+}
 .box-center {
   justify-content: center;
 }
@@ -53,12 +56,30 @@
 .column--thin {
   padding: 0 30px;
 }
+.column--wide {
+  padding: 0 5px;
+}
 
+@media screen and (max-width: 767px) {
+  .box {
+    flex-wrap: wrap;
+  }
+  .column-xs-full {
+    width: 100%;
+  }
+  .box-row--thin {
+    margin: 0 -15px;
+    padding: 0;
+  }
+  .column--thin {
+    padding: 0 15px;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .container {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 15px;
     box-sizing: border-box;
   }
 }

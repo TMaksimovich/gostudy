@@ -1,6 +1,8 @@
 // Слайдер
 (function($) {
   $('.slider').slick({
-    infinite: true
+    infinite: true,
+    dots: true,
+    adaptiveHeight: true
   });
 }(jQuery));

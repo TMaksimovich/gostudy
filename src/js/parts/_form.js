@@ -59,3 +59,13 @@
   });
 }(jQuery));
 // end custom input type file
+
+// search-form
+(function() {
+    $('.search-toggle').click(function(){
+        $(this).toggleClass('active');
+        $('.search-form').fadeIn(100);
+        $(this).fadeOut(100);
+    });
+}());
+// end search-form

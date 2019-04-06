@@ -1,8 +1,7 @@
 .btn {
     display: inline-block;
     vertical-align: middle;
-    height: 37px;
-    padding: 9px 23px;
+    padding: 8px 23px;
     color: #fff;
     border-radius: 5px;
 	text-align: center;
@@ -37,5 +36,13 @@
     &:active {
         background-color: $blue;
         color: #fff;
+    }
+}
+.btn-transparent {
+    border: 1px solid #fff;
+    &:hover,
+    &:active {
+        background-color: #fff;
+        color: $dark-blue;
     }
 }

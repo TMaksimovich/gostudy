@@ -2,6 +2,7 @@ header {
 	background-color: #F1F1F1;
 	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
 	padding: 15px 0;
+	position: relative;
 }
 .header-box {
 	align-items: center;
@@ -17,24 +18,6 @@ header {
 	span {
 		font-weight: 900;
 	}
-}
-.menu {
-	width: 36%;
-}
-.menu-item {
-	display: inline-block;
-	vertical-align: top;
-}
-.menu-link {
-	padding: 0 17px;
-	font-weight: 500;
-	font-size: 14px;
-	color: $title-color;
-}
-.menu-link--active,
-.menu-link:hover {
-	color: $blue;
-	font-weight: 700;
 }
 .search {
 	width: 365px;
@@ -54,7 +37,8 @@ header {
 	box-sizing: border-box;
 	outline: none;
 }
-.search-btn {
+.search-btn,
+.search-toggle {
 	width: 32px;
 	height: 40px;
 	font-size: 0;
@@ -66,6 +50,9 @@ header {
 	margin: auto;
 	right: 5px;
 	outline: none;
+}
+.search-toggle {
+	display: none;
 }
 .header-links {
 	width: 20%;
@@ -94,5 +81,30 @@ header {
 	&:hover,
 	&:active {
 		background-color: $dark-blue;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header {
+	    padding: 8px 0;
+	}
+	.search {
+		position: relative;
+		width: calc(100% - 133px);
+    	margin-right: 15px;
+	}
+	.search-form {
+		display: none;
+	}
+	.search-field {
+		margin: 0 0 0 5px;
+		height: 35px;
+		padding: 5px 35px 5px 7px;
+	}
+	.search-btn {
+		height: 35px;
+	}
+	.search-toggle {
+		display: block;
 	}
 }

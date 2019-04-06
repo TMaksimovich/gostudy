@@ -6,3 +6,13 @@
 		max-width: 110px;
 	}
 }
+
+
+@media screen and (max-width: 767px) {
+	.logo-list {
+		margin-top: 25px;
+	}
+	.logo-item {
+		width: 50%;
+	}
+}

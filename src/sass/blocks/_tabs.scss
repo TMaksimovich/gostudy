@@ -9,6 +9,9 @@
     justify-content: space-between;
     align-items: flex-end;
     margin: 22px 0 20px;
+    &.tabs-head--center {
+        justify-content: center;
+    }
 }
 .tabs-content {
     display: none;
@@ -42,5 +45,14 @@
     &.active {
         color: $blue;
         border-bottom: 1.5px solid $blue;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tabs-caption-item {
+        margin: 0 8px 10px;
+    }
+    .tabs-head {
+        margin-bottom: 5px;
     }
 }

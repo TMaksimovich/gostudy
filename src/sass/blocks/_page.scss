@@ -11,6 +11,18 @@
 }
 .partners {
     padding-top: 70px;
+    padding-bottom: 120px;
+}
+.vacancy-main {
+    padding-top: 50px;
+    .card {
+        margin-top: 10px;
+    }
+}
+.feedback {
+    .slider {
+        margin-top: 50px;
+    }
 }
 // Вакансия
 .vacancy-company {
@@ -87,52 +99,25 @@
 }
 // end Вакансия
 
-
-// Вакансии
-.vacancy-row {
-    margin: 0 -5px;
-    flex-wrap: wrap;
-}
-.vacancy-card {
-    margin: 0 5px 10px;
-    width: 32.4%;
-    .vacancy-favorite-link {
-        width: 19.27px;
-        height: 19.27px;
-        background-size: 19.27px 19.27px;
+@media screen and (max-width: 767px) {
+    .courses {
+        .card {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            margin-bottom: 40px;
+        }
+        .box-row--thin {
+            margin-bottom: 25px;
+        }
     }
-    .vacancy-favorite {
-        width: 30px;
+    .partners {
+        padding-top: 50px;
+        padding-bottom: 80px;
     }
-    .vacancy-company {
-        font-size: 16px;
-        width: 50%;
-    }
-    .vacancy-city,
-    .vacancy-pay {
-        text-align: right;
-    }
-    .vacancy-date {
-        text-align: left;
-    }
-    .vacancy-pay {
-        width: 50%;
-        color: $dark-blue;
+    .feedback {
+        .slider {
+            margin-top: 20px;
+        }
     }
 }
-.vacancy-name {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: normal;
-    color: $dark-blue;
-}
-.vacancy-desc {
-    height: 84px;
-    overflow: hidden;
-    font-size: 15px;
-    line-height: 20px;
-}
-.vacancy-link {
-    color: inherit;
-}
-// end Вакансии

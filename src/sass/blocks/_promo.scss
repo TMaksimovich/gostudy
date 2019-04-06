@@ -31,3 +31,24 @@
     color: #FFFFFF;
     margin-top: 0;
 }
+
+@media screen and (max-width: 767px) {
+    .promo {
+        min-height: 320px;
+        text-align: center;
+        background-position: center;
+    }
+    .promo-box {
+        min-height: 320px;
+        padding-bottom: 50px;
+        padding-left: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .promo-title {
+        font-weight: 500;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}

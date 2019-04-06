@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -88,6 +89,9 @@ input[type="search"] {
 .section-title--white {
   color: #fff;
 }
+.title--light-blue {
+  color: $blue;
+}
 .section-title {
   text-align: center;
   font-weight: 500;
@@ -110,4 +114,24 @@ input[type="search"] {
 }
 .gradient-bg--vertical {
   background: linear-gradient(136.12deg, #1385C5 7.66%, rgba(73, 236, 197, 0.97) 98.13%);
+}
+.dark-gray-bg {
+  background-color: #E7EDF1;
+}
+.light-gray-bg {
+  background-color: #F3F3F3;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 20px 0;
+  }
+  .section-title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .section-desc {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
