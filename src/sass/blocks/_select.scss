@@ -45,6 +45,7 @@ select.custom-select {
 	color: $title-color;
 	padding: 10px 7px;
 	overflow-y: auto;
+	z-index: 5;
 }
 .custom-option {
 	padding-bottom: 10px;

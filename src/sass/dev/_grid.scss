@@ -61,25 +61,37 @@
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
   .box {
     flex-wrap: wrap;
   }
   .column-xs-full {
     width: 100%;
   }
-  .box-row--thin {
-    margin: 0 -15px;
-    padding: 0;
-  }
-  .column--thin {
-    padding: 0 15px;
-  }
 }
 
 @media screen and (max-width: 991px) {
   .container {
+    width: 750px;
+  }
+  .column-sm-full {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 970px;
     padding: 0 15px;
     box-sizing: border-box;
+  }
+  .column--thin {
+    padding: 0 15px;
+  }
+  .box-row--thin {
+    margin: 0 -15px;
+    padding: 0;
   }
 }

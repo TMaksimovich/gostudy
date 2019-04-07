@@ -8,6 +8,9 @@
     .card {
         margin-bottom: 60px;
     }
+    .section-title {
+        margin-bottom: 40px;
+    }
 }
 .partners {
     padding-top: 70px;
@@ -104,9 +107,6 @@
         .card {
             margin-bottom: 25px;
         }
-        .section-title {
-            margin-bottom: 40px;
-        }
         .box-row--thin {
             margin-bottom: 25px;
         }
@@ -119,5 +119,11 @@
         .slider {
             margin-top: 20px;
         }
+    }
+    .vacancy-company {
+        margin-bottom: 10px;
+    }
+    .vacancy-date {
+        text-align: left;
     }
 }

@@ -24,10 +24,10 @@
 
 .divider-3 {
     position: relative;
-    width: 110%;
+    width: 129%;
     height: 120px;
     margin-top: -120px;
-    margin-left: -6%;
+    margin-left: -15%;
     &:after {
         content: '';
         position: absolute;
@@ -37,6 +37,11 @@
         height: 100%;
         background: url(../img/mask.svg) center no-repeat;
         background-size: cover;
+    }
+    & + div,
+    & + section,
+    & + .section {
+        margin-top: -30px;
     }
 }
 
@@ -100,5 +105,19 @@
             margin-top: -30px;
             padding-top: 45px;
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .divider-3 {
+        width: 200%;
+        margin-left: -53%;
+    }
+}
+
+@media screen and (min-width: 1640px) {
+    .divider-3 {
+        width: 400%;
+        margin-left: -149%;
     }
 }

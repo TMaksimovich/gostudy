@@ -25,6 +25,7 @@
 }
 .card-head--fix-height {
   height: 75px;
+  overflow: hidden;
 }
 .card-title {
   font-weight: 400;
@@ -35,6 +36,9 @@
 }
 .card-title--blue {
   color: $dark-blue;
+}
+.card-title--light-blue {
+  color: $blue;
 }
 .card-title--medium {
   font-weight: 500;
@@ -60,6 +64,7 @@
 }
 .card-body--fix-height {
   height: 170px;
+  overflow: hidden;
 }
 .card-footer {
   padding: 15px 0;
@@ -91,6 +96,7 @@
   background: url(../img/star.svg) 0 0 no-repeat;
   border: none;
   outline: none;
+  cursor: pointer;
   &.card-favorite-link--active {
       background: url(../img/star-blue.svg) 0 0 no-repeat;
       background-size: 36.98px 36.98px;

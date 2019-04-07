@@ -108,3 +108,9 @@ header {
 		display: block;
 	}
 }
+
+@media screen and (max-width: 1199px) {
+	.search {
+	    width: 300px;
+	}
+}

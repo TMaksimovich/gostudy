@@ -20,6 +20,7 @@
                             </ul>
                         </nav>
                         <div class="search">
+                            <span class="search-toggle"></span>
                             <form role="search" method="get" action="#" class="search-form">
                                 <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
                                 <button class="search-btn" type="submit">Найти</button>
@@ -35,6 +36,24 @@
                                 </li>
                             </ul>
                         </div>
+
+                        <div class="mobile-menu">
+                            <span id="toggle-menu" class="toggle-menu"></span>
+                            <ul class="mobile-menu-list">
+                                <li class="mobile-menu-item">
+                                    <a href="vacancy.html" class="mobile-menu-link">Вакансии</a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="#" class="mobile-menu-link">Контакты</a>
+                                </li>
+                                <li class="mobile-menu-item mobile-menu-item--divider">
+                                    <a href="#loginForm" class="mobile-menu-link btn-modal">Войти</a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="#registrationForm" class="mobile-menu-link btn-modal">Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -42,40 +61,41 @@
             <main class="vacancy-single">
                 <div class="container">
                     <h1 class="title title-blue">Веб-дизайнер</h1>
+
                     <div class="column column-full card">
                         <div class="box-head box">
-                            <div class="vacancy-company">
+                            <div class="vacancy-company column-xs-full">
                                 <p>Ростелеком</p>
                             </div>
-                            <div class="vacancy-pay">
+                            <div class="vacancy-pay column-xs-full">
                                 <p>50 000 руб</p>
                             </div>
                         </div>
 
                         <div class="box-body">
                             <div class="vacancy-meta box">
-                                <div class="vacancy-city">
+                                <div class="vacancy-city column-xs-full">
                                     <p>Москва</p>
                                 </div>
-                                <div class="vacancy-date">
+                                <div class="vacancy-date column-xs-full">
                                     <p>вакансия размещена 16 марта 2019</p>
                                 </div>
-                                <div class="vacancy-employment">
+                                <div class="vacancy-employment column-xs-full">
                                     <p>Полная занятость, полный день</p>
                                 </div>
                             </div>
                             <div class="vacancy-column-box box">
-                                <div class="vacancy-column vacancy-column--third">
+                                <div class="vacancy-column column-xs-full vacancy-column--third">
                                     <h2>Описание</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
-                                <div class="vacancy-column vacancy-column--third">
+                                <div class="vacancy-column column-xs-full vacancy-column--third">
                                     <h2>Требуемые навыки</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
-                                <div class="vacancy-column vacancy-column--third">
+                                <div class="vacancy-column column-xs-full vacancy-column--third">
                                     <h2>Мы предлагаем</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
@@ -87,7 +107,7 @@
                                 <a href="#" class="btn btn--light-blue vacancy-action-link">Откликнуться</a>
                             </div>
                             <div class="vacancy-favorite">
-                                <button class="vacancy-favorite-link">В избранное</button>
+                                <button class="card-favorite-link">В избранное</button>
                             </div>
                         </div>
                     </div>
