@@ -32,11 +32,11 @@ var path = {
     },
     src: {
         html: 'src/*.html',
-        js: 'src/js/main.js',
-        jslk: 'src/js/main-lk.js',
+        js: 'src/js/*.js',
         libs: 'src/js/libs/**/*.*',
-        style: 'src/sass/main.scss',
-        stylelk: 'src/sass/main-lk.scss',
+        // style: 'src/sass/main.scss',
+        // style: 'src/sass/main-lk.scss',
+        style: 'src/sass/*.scss',
         img: 'src/img/**/*.*',
         svg: 'src/img/svg/*.svg',
         fonts: 'src/fonts/**/*.*'

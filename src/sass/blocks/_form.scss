@@ -30,6 +30,7 @@ fieldset {
 label {
 	font-weight: normal;
 	font-size: 10px;
+	color: #ABABAB;
 	line-height: normal;
 	display: block;
 	& + input,
@@ -85,4 +86,7 @@ input[type="submit"] {
 .form-footer a {
 	font-size: 10px;
 	line-height: 14px;
+}
+.field-group {
+	margin-bottom: 15px;
 }

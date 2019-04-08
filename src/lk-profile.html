@@ -20,6 +20,7 @@
                             </ul>
                         </nav>
                         <div class="search">
+                            <span class="search-toggle"></span>
                             <form role="search" method="get" action="#" class="search-form">
                                 <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
                                 <button class="search-btn" type="submit">Найти</button>
@@ -91,6 +92,46 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="mobile-menu">
+                            <span id="toggle-menu" class="toggle-menu"></span>
+                            <div class="mobile-menu-list">
+                                <div class="mobile-menu-profile">
+                                    <div class="mobile-menu-avatar">
+                                        <img src="img/avatar.svg" alt="Константин Константинопольский">
+                                    </div>
+                                    <div class="mobile-menu-user">
+                                        <p class="mobile-menu-name">Константин Константинопольский</p>
+                                        <p class="mobile-menu-email">konstantink@gmail.com</p>
+                                    </div>
+                                </div>
+                                <ul class="mobile-menu-profile-list">
+                                    <li class="mobile-menu-item mobile-menu-item--active">
+                                        <a href="lk-profile.html" class="mobile-menu-link">Профиль</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-vacancy.html" class="mobile-menu-link">Вакансии</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-resume.html" class="mobile-menu-link">Резюме</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="#" class="mobile-menu-link">Курсы</a>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-menu-lk">
+                                    <li class="mobile-menu-item">
+                                        <a href="vacancy.html" class="mobile-menu-link">Вакансии</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="#" class="mobile-menu-link">Контакты</a>
+                                    </li>
+                                    <li class="mobile-menu-item mobile-menu-item--logout">
+                                        <a href="#" class="mobile-menu-link">Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -137,7 +178,7 @@
                             <a href="#" class="btn btn--light-blue">Создать корпоративный аккаунт</a>
                         </div>
 
-                        <div class="tabs-content active column column-full column-lk">
+                        <div class="tabs-content active column column-full column-lk card">
                             <form id="profileSettings" action="#" class="lk-profile-settings">
                                 <div class="avatar-field">
                                     <div class="avatar-field-img">
@@ -161,25 +202,20 @@
                                         </div>
 
                                         <div class="field-group">
+                                            <label for="profileSurname" class="label-field">Фамилия</label>
+                                            <input id="profileSurname" name="profileSurname" type="text" value="Константинопольский">
+                                        </div>
+
+                                        <div class="field-group">
                                             <label for="sources-sex" class="label-field">Пол</label>
                                             <select id="sources-sex" name="profileSex" class="custom-select custom-select--text custom-select--bg" placeholder="Не выбран">
                                                 <option value="Мужской">Мужской</option>
                                                 <option value="Женский">Женский</option>
                                             </select>
                                         </div>
-
-                                        <div class="field-group">
-                                            <label for="profileEmail" class="label-field">E-mail</label>
-                                            <input id="profileEmail" name="profileEmail" type="email" value="konstantink@gmail.com">
-                                        </div>
                                     </div>
 
                                     <div class="column-settings">
-                                        <div class="field-group">
-                                            <label for="profileSurname" class="label-field">Фамилия</label>
-                                            <input id="profileSurname" name="profileSurname" type="text" value="Константинопольский">
-                                        </div>
-
                                         <div class="field-group">
                                             <label for="sources-age" class="label-field">Возраст</label>
                                             <select id="sources-age" name="profileAge" class="custom-select custom-select--text custom-select--bg" placeholder="Не выбран">
@@ -191,6 +227,11 @@
                                         <div class="field-group">
                                             <label for="profileTel" class="label-field">Телефон</label>
                                             <input id="profileTel" name="profileTel" type="tel" value="+7 (911) 123-45-67">
+                                        </div>
+
+                                        <div class="field-group">
+                                            <label for="profileEmail" class="label-field">E-mail</label>
+                                            <input id="profileEmail" name="profileEmail" type="email" value="konstantink@gmail.com">
                                         </div>
                                     </div>
 
@@ -207,7 +248,7 @@
                             </form>
                         </div>
 
-                        <div class="tabs-content column column-full column-lk">
+                        <div class="tabs-content column column-full column-lk card">
                             <h2 class="title">Изменить пароль</h2>
                             <form id="changePassword" action="#" class="lk-form lk-form-change-password">
                                 <div class="field-group">
@@ -229,11 +270,11 @@
                             </form>
                         </div>
 
-                        <div class="tabs-content column column-full column-lk">
+                        <div class="tabs-content column column-full column-lk card">
                             <h2 class="title">Удалить учётную запись</h2>
                             <p>Хотите удалить свою учетную запись?</p>
                             <p>Удаление учетной записи приведет к удалению всего ее содержимого и всех связанных с ней данных.</p>
-                            <button id="removeProfile" class="btn btn--small ">Удалить</button>
+                            <button id="removeProfile" class="btn btn--light-blue btn--small ">Удалить</button>
                         </div>
                     </div>
                 </main>

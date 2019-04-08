@@ -20,6 +20,7 @@
                             </ul>
                         </nav>
                         <div class="search">
+                            <span class="search-toggle"></span>
                             <form role="search" method="get" action="#" class="search-form">
                                 <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
                                 <button class="search-btn" type="submit">Найти</button>
@@ -91,6 +92,46 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="mobile-menu">
+                            <span id="toggle-menu" class="toggle-menu"></span>
+                            <div class="mobile-menu-list">
+                                <div class="mobile-menu-profile">
+                                    <div class="mobile-menu-avatar">
+                                        <img src="img/avatar.svg" alt="Константин Константинопольский">
+                                    </div>
+                                    <div class="mobile-menu-user">
+                                        <p class="mobile-menu-name">Константин Константинопольский</p>
+                                        <p class="mobile-menu-email">konstantink@gmail.com</p>
+                                    </div>
+                                </div>
+                                <ul class="mobile-menu-profile-list">
+                                    <li class="mobile-menu-item mobile-menu-item--active">
+                                        <a href="lk-profile.html" class="mobile-menu-link">Профиль</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-vacancy.html" class="mobile-menu-link">Вакансии</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-resume.html" class="mobile-menu-link">Резюме</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="#" class="mobile-menu-link">Курсы</a>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-menu-lk">
+                                    <li class="mobile-menu-item">
+                                        <a href="vacancy.html" class="mobile-menu-link">Вакансии</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="#" class="mobile-menu-link">Контакты</a>
+                                    </li>
+                                    <li class="mobile-menu-item mobile-menu-item--logout">
+                                        <a href="#" class="mobile-menu-link">Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -126,50 +167,66 @@
                 </aside>
 
                 <main class="lk-main">
-                    <div class="column column-full column-lk">
+                    <div class="column column-full column-lk card">
                         <div class="box-head box">
                             <h1>Мои вакансии</h1>
                             <a href="#" class="btn btn--light-blue">Добавить вакансию</a>
                         </div>
 
                         <div class="box-body">
-                            <table class="lk-table">
-                                <tr>
-                                    <th>Название</th>
-                                    <th>Зарплата</th>
-                                    <th>Последнее обновление</th>
-                                    <th>Статус</th>
-                                    <th>Удалить</th>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Программист backend на C++/C#</a></td>
-                                    <td>от 100 000 руб</td>
-                                    <td>08.02.2019</td>
-                                    <td class="published">Опубликовано</td>
-                                    <td class="remove"><span class="remove-ikon">X</span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Frontend-разработчик / Верстальщик</a></td>
-                                    <td>не указана</td>
-                                    <td>08.02.2019</td>
-                                    <td class="archive">В архиве</td>
-                                    <td class="remove"><span class="remove-ikon">X</span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Web-программист</a></td>
-                                    <td>от 50 000 до 70 000 руб</td>
-                                    <td>08.02.2019</td>
-                                    <td class="published">Опубликовано</td>
-                                    <td class="remove"><span class="remove-ikon">X</span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Разработчик SharePoint</a></td>
-                                    <td>не указана</td>
-                                    <td>08.02.2019</td>
-                                    <td class="draft">Черновик</td>
-                                    <td class="remove"><span class="remove-ikon">X</span></td>
-                                </tr>
-                            </table>
+                            <div class="lk-table">
+                                <div class="lk-table-row lk-table-row-th">
+                                    <div class="lk-table-th lk-table-name">Название</div>
+                                    <div class="lk-table-th lk-table-cash">Зарплата</div>
+                                    <div class="lk-table-th lk-table-update">Последнее обновление</div>
+                                    <div class="lk-table-th lk-table-status">Статус</div>
+                                    <div class="lk-table-th lk-table-remove">Удалить</div>
+                                </div>
+                                <div class="lk-table-row lk-table-row-td">
+                                    <div class="lk-table-td lk-table-name"><a href="#">Программист backend на C++/C#</a></div>
+                                    <div class="lk-table-td lk-table-cash">от 100 000 руб</div>
+                                    <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                    <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    <div class="lk-table-td lk-table-remove remove">
+                                        <button class="remove-btn">
+                                            <span class="remove-ikon">Удалить</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="lk-table-row lk-table-row-td">
+                                    <div class="lk-table-td lk-table-name"><a href="#">Frontend-разработчик / Верстальщик</a></div>
+                                    <div class="lk-table-td lk-table-cash">не указана</div>
+                                    <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                    <div class="lk-table-td lk-table-status archive">В архиве</div>
+                                    <div class="lk-table-td lk-table-remove remove">
+                                        <button class="remove-btn">
+                                            <span class="remove-ikon">Удалить</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="lk-table-row lk-table-row-td">
+                                    <div class="lk-table-td lk-table-name"><a href="#">Web-программист</a></div>
+                                    <div class="lk-table-td lk-table-cash">от 50 000 до 70 000 руб</div>
+                                    <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                    <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    <div class="lk-table-td lk-table-remove remove">
+                                        <button class="remove-btn">
+                                            <span class="remove-ikon">Удалить</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="lk-table-row lk-table-row-td">
+                                    <div class="lk-table-td lk-table-name"><a href="#">Разработчик SharePoint</a></div>
+                                    <div class="lk-table-td lk-table-cash">не указана</div>
+                                    <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                    <div class="lk-table-td lk-table-status draft">Черновик</div>
+                                    <div class="lk-table-td lk-table-remove remove">
+                                        <button class="remove-btn">
+                                            <span class="remove-ikon">Удалить</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
