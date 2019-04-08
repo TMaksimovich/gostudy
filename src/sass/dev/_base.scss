@@ -6,7 +6,6 @@
 
 html {
   box-sizing: border-box;
-  height: 100%;
   overflow-x: hidden;
 }
 
@@ -15,7 +14,6 @@ body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
-  height: 100%;
   background-color: #F1F1F1;
   color: $font-color;
   font-family: $font-family;
@@ -26,23 +24,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-main {
-  flex: 1 0 auto;
-  padding: 20px 0;
-}
-footer,
-header {
-  flex: 0 0 auto;
-}
-.lk-wrapper {
-  display: flex;
-  flex: 1 0 auto;
-}
 .section {
   padding: 20px 0 50px;
 }
@@ -134,5 +115,29 @@ input[type="search"] {
   .section-desc {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main {
+    flex: 1 0 auto;
+    padding: 20px 0;
+  }
+  footer,
+  header {
+    flex: 0 0 auto;
+  }
+  .lk-wrapper {
+    display: flex;
+    flex: 1 0 auto;
   }
 }
