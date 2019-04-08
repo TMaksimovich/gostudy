@@ -23,6 +23,8 @@ body {
   line-height: 21px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  z-index: 2;
+  position: relative;
 }
 
 .section {

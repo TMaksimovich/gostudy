@@ -20,6 +20,44 @@
 	display: none;
 }
 
+.mobile-menu-profile {
+	display: flex;
+	padding: 0 15px;
+	align-items: center;
+}
+.mobile-menu-avatar {
+	width: 44px;
+	height: 44px;
+	margin-right: 15px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+}
+.mobile-menu-name {
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.mobile-menu-email {
+	font-weight: 300;
+	font-size: 12px;
+}
+.mobile-menu-user {
+	width: calc(100% - 50px);
+}
+.mobile-menu-profile-list {
+	padding-left: 20px;
+	font-weight: 400;
+	margin-top: 10px;
+}
+.mobile-menu-item--logout {
+	border-top: 0.75px solid #fff;
+}
+
 @media screen and (max-width: 767px) {
 	.mobile-menu-list {
 		top: 40px;

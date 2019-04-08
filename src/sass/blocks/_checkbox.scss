@@ -31,13 +31,13 @@
 	    width: 12px;
 	    height: 12px;
 	    background-color: #f5f4f4;
-	    border: 1px solid #27D4B4;
+	    border: 1px solid $blue;
 	    z-index: 1;
 	    cursor: pointer;
 	    border-radius: 2px;
 	}
 	input[type="checkbox"]:checked + .checkbox:before {
-	    background-color: #27D4B4;
+	    background-color: $blue;
 	}
 	input[type="checkbox"]:checked + .checkbox:after {
 	    content: '';
