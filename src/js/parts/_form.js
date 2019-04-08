@@ -21,7 +21,7 @@
   }, function() {
     $(this).parents(".custom-options").removeClass("option-hover");
   });
-  $(".custom-select-trigger").on("click", function() {
+  $(".custom-select-trigger").on("click", function(event) {
   	$(".custom-select").removeClass("opened");
     $('html').one('click',function() {
       $(".custom-select").removeClass("opened");
