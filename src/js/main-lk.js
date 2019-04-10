@@ -3,3 +3,4 @@
 //= parts/_dropdown.js
 //= parts/_tabs.js
 //= parts/_mobile-menu.js
+//= parts/_cookies.js

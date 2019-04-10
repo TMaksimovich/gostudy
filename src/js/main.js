@@ -6,3 +6,4 @@
 //= parts/_tabs.js
 //= parts/_slider.js
 //= parts/_mobile-menu.js
+//= parts/_cookies.js
