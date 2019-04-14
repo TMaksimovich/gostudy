@@ -35,10 +35,16 @@ header {
 	width: 20%;
 	text-align: right;
 }
+.header-links-list {
+	margin: 0;
+}
 .header-links-item {
 	display: inline-block;
 	vertical-align: top;
 	padding: 0 11px;
+	&:before {
+		display: none;
+	}
 	&:last-child {
 		padding-right: 0;
 	}

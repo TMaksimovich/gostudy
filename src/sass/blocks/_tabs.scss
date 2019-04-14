@@ -37,10 +37,17 @@
     vertical-align: middle;
     cursor: pointer;
     padding-bottom: 2px;
+    padding-left: 0;
     &.active {
         color: $blue;
         border-bottom: 1.5px solid $blue;
     }
+    &:before {
+        display: none;
+    }
+}
+.tabs-caption {
+    margin: 0;
 }
 
 @media screen and (max-width: 767px) {

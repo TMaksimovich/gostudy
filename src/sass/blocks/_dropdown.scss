@@ -51,8 +51,15 @@
 	font-size: 14px;
 	line-height: normal;
 	color: #3B3B3B;
+	margin: 0;
 	&.open {
 		display: block;
+	}
+}
+.dropdown-menu-item {
+	padding-left: 0;
+	&:before {
+		display: none;
 	}
 }
 .dropdown-menu-item--logout {

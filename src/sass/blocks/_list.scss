@@ -7,6 +7,18 @@
 	}
 }
 
+.privacy-list,
+.logo-list {
+	margin: 0;
+}
+.privacy-item,
+.logo-item {
+	padding-left: 0;
+	&:before {
+		display: none;
+	}
+}
+
 
 @media screen and (max-width: 767px) {
 	.logo-list {

@@ -46,13 +46,18 @@ select.custom-select {
 	padding: 10px 7px;
 	overflow-y: auto;
 	z-index: 5;
+	margin: 0;
 }
 .custom-option {
 	padding-bottom: 10px;
+	padding-left: 0;
 	cursor: pointer;
 	&.selection,
 	&:hover {
 		color: $blue;
+	}
+	&:before {
+		display: none;
 	}
 }
 

@@ -203,6 +203,10 @@
         display: inline-block;
         vertical-align: middle;
         margin: 8px;
+        padding-left: 0;
+        &:before {
+            display: none;
+        }
     }
     button {
         width: 7px;

@@ -32,9 +32,16 @@
     font-size: 12px;
     line-height: normal;
     color: #ABABAB;
+    margin-top: 0;
 }
 .sidebar-menu {
     margin-top: 25px;
+}
+.sidebar-item {
+    padding-left: 0;
+    &:before {
+        display: none;
+    }
 }
 .sidebar-link {
     font-weight: 400;

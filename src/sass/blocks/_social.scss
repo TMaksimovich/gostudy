@@ -4,9 +4,14 @@
 .social-list {
 	padding: 7px 0;
 	justify-content: center;
+	margin: 0;
 }
 .social-item {
 	margin: 5px;
+	padding-left: 0;
+	&:before {
+		display: none;
+	}
 }
 .social-link {
 	width: 30px;
