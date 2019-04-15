@@ -114,28 +114,13 @@
                 </div>
             </main>
 
-            <form id="respondJob" class="mfp-hide white-popup-block">
-                <div class="form-head">
-                    <p>Откликнуться на вакансию</p>
+            <div id="respondJob" class="mfp-hide white-popup-block">
+                <div class="modal-body modal-body--center">
+                    <h4 class="title-modal title-red">У вас нет созданных резюме</h4>
+                    <p>Чтобы откликнуться на вакансию вам надо создать резюме</p>
+                    <a href="lk-resume.html" class="btn btn-center btn--dark-blue">Создать</a>
                 </div>
-
-                <div class="form-body">
-                    <div class="field-group">
-                        <label for="sources-resume" class="label-field">Выберите своё резюме</label>
-                        <select id="sources-resume" name="resume" class="custom-select custom-select--text custom-select--bg" placeholder="Не выбран">
-                            <option value="Резюме 1">Резюме 1</option>
-                            <option value="Резюме 2">Резюме 2</option>
-                        </select>
-                    </div>
-
-                    <div class="field-group">
-                        <label for="sources-message" class="label-field">Комментарий</label>
-                        <textarea name="message" id="sources-message" rows="7"></textarea>
-                    </div>
-
-                    <input type="submit" value="Отправить" class="btn btn-center">
-                </div>
-            </form>
+            </div>
 
             //= html/_footer.html
             //= html/_form.html

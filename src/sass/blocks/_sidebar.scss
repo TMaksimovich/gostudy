@@ -42,35 +42,55 @@
     &:before {
         display: none;
     }
+    .sidebar-menu-trigger {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 8px;
+            margin: auto;
+            width: 10px;
+            height: 10px;
+            background: url(../img/arrow-white.svg) 0 0 no-repeat;
+            transform: rotate(-90deg);
+        }
+        &.active:after {
+            transform: rotate(90deg);
+        }
+    }
 }
 .sidebar-link {
     font-weight: 400;
     font-size: 14px;
     line-height: normal;
     color: #fff;
-    padding: 12px 25px 12px 70px;
+    padding: 12px 28px;
     display: block;
-    position: relative;
+    cursor: pointer;
 }
 .sidebar-item--active .sidebar-link,
 .sidebar-link:hover {
     background-color: #2D6470;
 }
-.sidebar-item--active .sidebar-link:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 8px;
-    margin: auto;
-    width: 10px;
-    height: 10px;
-    background: url(../img/arrow-white.svg) 0 0 no-repeat;
-}
 .sidebar-content.fixed {
     position: fixed;
     width: 210px;
 }
+.sidebar-menu-child {
+    display: none;
+    margin: 0;
+    &.show {
+        display: block;
+    }
+    .sidebar-link {
+        font-size: 12px;
+        font-weight: 300;
+        padding-left: 40px;
+    }
+}
+
 
 @media screen and (max-width: 767px) {
     .sidebar {

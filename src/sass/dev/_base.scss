@@ -44,11 +44,14 @@ h2 {
   font-size: 21px;
   font-weight: 700;
 }
-h3,
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
 h4,
 h5,
 h6 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 p + p {
@@ -163,6 +166,9 @@ input[type="search"] {
 .title--light-blue {
   color: $blue;
 }
+.title-red {
+  color: $red;
+}
 .section-title {
   text-align: center;
   font-weight: 500;
@@ -191,6 +197,63 @@ input[type="search"] {
 }
 .light-gray-bg {
   background-color: #F3F3F3;
+}
+
+.breadcrumbs {
+  margin: 10px 0;
+}
+.breadcrumbs-item {
+  padding-left: 0;
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 10px;
+  &:before {
+    display: none;
+  }
+  &:after {
+    content: ' > ';
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &:last-child:after {
+    display: none;
+  }
+  a {
+    color: $title-color;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.meta-box {
+  margin: 0 10px;
+  color: $dark-gray;
+  line-height: normal;
+  .meta-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .meta-small-text {
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {

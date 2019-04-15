@@ -1,8 +1,8 @@
 // mobile-menu
 (function() {
-    $('#toggle-menu').click(function(){
+    $('#toggle-menu, .sidebar-menu-trigger').click(function(){
         $(this).toggleClass('active');
-        $('.mobile-menu-list').toggleClass('show');
+        $('.mobile-menu-list, .sidebar-menu-child').toggleClass('show');
     });
 }());
 // end mobile-menu
