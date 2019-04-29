@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        //= html/_lk-head.html
-        <title>GoStudy - Мои резюме</title>
+        //= html/_head.html
+        <title>GoStudy - Корзина</title>
     </head>
 
     <body>
-        <div class="wrapper">
+        <div class="wrapper wrapper-flex--sm">
             <header class="fixed lk-header">
                 <div class="container-full">
                     <div class="header-box box">
@@ -15,7 +15,19 @@
                         </div>
                         <nav class="menu">
                             <ul class="menu-list">
-                                <li class="menu-item"><a href="vacancy.html" class="menu-link">Вакансии</a></li>
+                                <li class="menu-item"><a href="vacancy.html" class="menu-link">Вакансии</a>
+                                    <ul class="menu-list-child">
+                                        <li class="menu-item"><a href="#" class="menu-link">Вакансии</a>
+                                            <ul class="menu-list-sub">
+                                                <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                                <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                                <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                        <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                    </ul>
+                                </li>
                                 <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
                             </ul>
                         </nav>
@@ -27,7 +39,7 @@
                             </form>
                         </div>
                         <div class="header-meta box">
-                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--notification">
+                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--notification dropdown-menu--new">
                                 <p class="dropdown-menu-title">Уведомления</p>
                                 <div class="dropdown-menu-list">
                                     <div class="dropdown-menu-head box box-between">
@@ -35,7 +47,7 @@
                                         <a href="#">Посмотреть все</a>
                                     </div>
                                     <ul class="dropdown-menu-body">
-                                        <li class="dropdown-menu-item">
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
                                             <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
                                         </li>
                                         <li class="dropdown-menu-item">
@@ -54,7 +66,7 @@
                                 </div>
                             </div>
 
-                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--message">
+                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--message dropdown-menu--new">
                                 <p class="dropdown-menu-title">Сообщения</p>
                                 <div class="dropdown-menu-list">
                                     <div class="dropdown-menu-head box box-between">
@@ -62,7 +74,7 @@
                                         <a href="#">Посмотреть все</a>
                                     </div>
                                     <ul class="dropdown-menu-body">
-                                        <li class="dropdown-menu-item">
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
                                             <div class="box box-center--vertical">
                                                 <div class="avatar">
                                                     <img src="img/avatar.svg" alt="">
@@ -74,7 +86,7 @@
                                             </div>
                                             <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
                                         </li>
-                                        <li class="dropdown-menu-item">
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
                                             <div class="box box-center--vertical">
                                                 <div class="avatar">
                                                     <img src="img/avatar.svg" alt="">
@@ -145,6 +157,11 @@
                                 <ul class="mobile-menu-profile-list">
                                     <li class="mobile-menu-item mobile-menu-item--active">
                                         <a href="lk-profile.html" class="mobile-menu-link">Профиль</a>
+                                        <ul class="mobile-menu-list-child">
+                                            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Личные данные</a></li>
+                                            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Пароль</a></li>
+                                            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Удалить учётную запись</a></li>
+                                        </ul>
                                     </li>
                                     <li class="mobile-menu-item">
                                         <a href="lk-vacancy.html" class="mobile-menu-link">Мои вакансии</a>
@@ -173,119 +190,16 @@
                 </div>
             </header>
 
-            <div class="lk-wrapper">
-                <aside class="sidebar">
-                    <div class="sidebar-content fixed">
-                        <div class="sidebar-profile">
-                            <div class="sidebar-avatar">
-                                <img src="img/avatar.svg" alt="Константин Константинопольский">
-                            </div>
-                            <p class="sidebar-name">Константин Константинопольский</p>
-                            <p class="sidebar-email">konstantink@gmail.com</p>
-                        </div>
-                        <ul class="sidebar-menu">
-                            <li class="sidebar-item">
-                                <a href="lk-profile.html" class="sidebar-link">Профиль</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="lk-vacancy.html" class="sidebar-link">Мои вакансии</a>
-                            </li>
-                            <li class="sidebar-item sidebar-item--active">
-                                <a href="lk-resume.html" class="sidebar-link">Мои резюме</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Курсы</a>
-                            </li>
-                            <li class="sidebar-item sidebar-item--logout">
-                                <a href="#" class="sidebar-link">Выход</a>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-
-                <main class="lk-main">
-                    <div class="column column-full column-lk card">
-                        <div class="box-head box">
-                            <h1>Мои резюме</h1>
-                            <a href="#" class="btn btn--light-blue">Добавить резюме</a>
-                        </div>
-
-                        <div class="box-body">
-                            <div class="lk-table">
-                                <div class="lk-table-row lk-table-row-th">
-                                    <div class="lk-table-th lk-table-name">Название</div>
-                                    <div class="lk-table-th lk-table-cash">Зарплата</div>
-                                    <div class="lk-table-th lk-table-update">Последнее обновление</div>
-                                    <div class="lk-table-th lk-table-status">Статус</div>
-                                </div>
-                                <div class="lk-table-row lk-table-row-td">
-                                    <div class="lk-table-td lk-table-name">
-                                        <a href="#">Программист backend на C++/C#</a>
-                                        <ul class="lk-table-list">
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="lk-table-td lk-table-cash">от 100 000 руб</div>
-                                    <div class="lk-table-td lk-table-update">08.02.2019</div>
-                                    <div class="lk-table-td lk-table-status published">Опубликовано</div>
-                                </div>
-                                <div class="lk-table-row lk-table-row-td">
-                                    <div class="lk-table-td lk-table-name"><a href="#">Frontend-разработчик / Верстальщик</a>
-                                        <ul class="lk-table-list">
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="lk-table-td lk-table-cash">не указана</div>
-                                    <div class="lk-table-td lk-table-update">08.02.2019</div>
-                                    <div class="lk-table-td lk-table-status archive">В архиве</div>
-                                </div>
-                                <div class="lk-table-row lk-table-row-td">
-                                    <div class="lk-table-td lk-table-name"><a href="#">Web-программист</a>
-                                        <ul class="lk-table-list">
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="lk-table-td lk-table-cash">от 50 000 до 70 000 руб</div>
-                                    <div class="lk-table-td lk-table-update">08.02.2019</div>
-                                    <div class="lk-table-td lk-table-status published">Опубликовано</div>
-                                </div>
-                                <div class="lk-table-row lk-table-row-td">
-                                    <div class="lk-table-td lk-table-name">
-                                        <a href="#">Разработчик SharePoint</a>
-                                        <ul class="lk-table-list">
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
-                                            <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="lk-table-td lk-table-cash">не указана</div>
-                                    <div class="lk-table-td lk-table-update">08.02.2019</div>
-                                    <div class="lk-table-td lk-table-status draft">Черновик</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </main>
-            </div>
-
+            <main class="cart-empty">
+                <div class="container-full">
+                    <h1 class="title title-blue">Корзина</h1>
+                    <p>Ваша корзина пуста.</p>
+                    <a href="#" class="btn btn--light-blue">Поиск курсов</a>
+                </div>
+            </main>
 
             //= html/_lk-footer.html
-            //= html/_lk-scripts.html
+            //= html/_scripts.html
         </div>
     </body>
 </html>

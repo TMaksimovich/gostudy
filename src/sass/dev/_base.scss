@@ -268,6 +268,19 @@ input[type="search"] {
     font-size: 18px;
     line-height: 24px;
   }
+  .wrapper-flex--sm {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    main {
+      flex: 1 0 auto;
+      padding: 20px 0;
+    }
+    footer,
+    header {
+      flex: 0 0 auto;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
