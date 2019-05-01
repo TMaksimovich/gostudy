@@ -99,9 +99,6 @@ button {
 	line-height: normal;
 	font-weight: 400;
 }
-.send-ok {
-
-}
 
 .form-link {
 	font-weight: 500;
@@ -288,6 +285,18 @@ button {
 	&:not(:empty):before {
 		content: "Выбранный файл: ";
 	}
+}
+
+.coupon-form {
+	margin-bottom: 50px;
+}
+.coupon-form-group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.coupon-form-field {
+	margin-right: 7px;
 }
 
 @media screen and (max-width: 767px) {

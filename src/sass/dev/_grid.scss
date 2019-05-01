@@ -79,6 +79,9 @@
   .column-sm-full {
     width: 100%;
   }
+  .column-sm-half {
+    width: 50%;
+  }
   .container-full {
     padding: 0 15px;
   }
@@ -96,5 +99,11 @@
   .box-row--thin {
     margin: 0 -15px;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .column-xl-four {
+    width: 25%;
   }
 }

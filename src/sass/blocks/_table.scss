@@ -13,6 +13,7 @@
 .lk-table-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .lk-table-row-th {
     border-bottom: 0.75px solid #ABABAB;
@@ -33,22 +34,36 @@
     font-size: 14px;
     line-height: normal;
     color: $title-color;
-    padding: 15px 0;
+    padding: 15px 10px 15px 0;
 }
 .lk-table-name {
     width: 50%;
+    .avatar {
+        width: 31px;
+        height: 31px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: $blue;
+        border-radius: 50%;
+        & + p {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+            width: calc(100% - 80px);
+            padding-right: 15px;
+        }
+    }
 }
-.lk-table-cash {
-    width: 20%;
-}
+.lk-table-cash,
+.lk-table-pay,
+.lk-table-discount,
 .lk-table-update {
     width: 20%;
 }
-.lk-table-status {
-    width: 10%;
-}
+
+.lk-table-status,
 .lk-table-remove {
-    width: 5%;
+    width: 10%;
 }
 .remove-btn {
     background: none;
@@ -92,6 +107,31 @@
 }
 .lk-table-link--remove {
     color: $red;
+}
+.lk-table-pay {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $dark-blue;
+}
+.lk-table-discount {
+    font-weight: 400;
+    .old-pay {
+        text-decoration: line-through;
+        margin-bottom: 2px;
+    }
+    .old-pay-text,
+    .old-pay {
+        display: block;
+    }
+    .old-pay-text {
+        display: none;
+    }
+    .discount-text {
+        font-size: 12px;
+        line-height: 14px;
+        color: $gray;
+    }
 }
 @media screen and (max-width: 767px) {
     .lk-table-th {

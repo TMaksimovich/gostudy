@@ -27,6 +27,9 @@
     &.btn--small {
         width: 133px;
     }
+    &.btn--large {
+        padding: 10px 45px;
+    }
 }
 
 .btn-white {
@@ -51,4 +54,5 @@
 }
 .btn-center {
     margin: auto;
+    display: block;
 }

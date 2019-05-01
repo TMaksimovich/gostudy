@@ -196,44 +196,78 @@
                 <div class="container-full">
                     <h1 class="title title-blue">Корзина</h1>
 
-                    <div class="box box-row box-row--wide">
+                    <div class="box box-row box-row--wide box-wrap">
                         <div class="column column--wide column-sm-full column-eight">
                             <div class="card card-wrapper">
                                 <div class="lk-table">
+                                    <div class="lk-table-row lk-table-row-th"></div>
+
                                     <div class="lk-table-row lk-table-row-td">
                                         <div class="lk-table-td lk-table-name">
-                                            <a href="#">Программист backend на&nbsp;C++/C#</a>
+                                            <div class="avatar">
+                                                <img src="img/card_1.jpg" alt="">
+                                            </div>
+                                            <p>Инвестирование в акции на фондовом рынке - начни торговать!</p>
                                         </div>
-                                        <div class="lk-table-td lk-table-cash">от&nbsp;100 000 руб</div>
-                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
-                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                        <div class="lk-table-td lk-table-pay">10 000 руб</div>
+                                        <div class="lk-table-td lk-table-discount">
+                                            <div class="old-pay-box">
+                                                <span class="old-pay-text">первоначальная цена</span>
+                                                <span class="old-pay">20 000 руб</span>
+                                            </div>
+                                            <div class="discount-text">Скидка 50%</div>
+                                        </div>
+                                        <div class="lk-table-td lk-table-remove">
+                                            <button class="remove-btn lk-table-link--remove">Удалить</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">
+                                            <div class="avatar"></div>
+                                            <p>Инвестирование в акции на фондовом рынке - начни торговать!</p>
+                                        </div>
+                                        <div class="lk-table-td lk-table-pay">10 000 руб</div>
+                                        <div class="lk-table-td lk-table-discount">
+                                            <div class="old-pay-box">
+                                                <span class="old-pay-text">первоначальная цена</span>
+                                                <span class="old-pay">20 000 руб</span>
+                                            </div>
+                                            <div class="discount-text">Скидка 50%</div>
+                                        </div>
+                                        <div class="lk-table-td lk-table-remove">
+                                            <button class="remove-btn lk-table-link--remove">Удалить</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="column column--wide column-sm-full column-third">
-                            <div class="card card-wrapper">
-                                <div class="card-head box box-between">
-                                    <h3 class="card-title card-title--medium card-title--blue">
-                                        <a href="vacancy-single.html">Веб-дизайнер</a>
-                                    </h3>
+                        <div class="column column--wide column-xs-full column-sm-half column-third column-xl-four">
+                            <div class="card card-wrapper cart-checkout">
+                                <div class="box box-between cart-checkout-row">
+                                    <span>Выбрано:</span>
+                                    <span class="title-blue">2 курса</span>
+                                </div>
 
-                                    <div class="card-favorite">
-                                        <button class="card-favorite-link card-favorite-link--small card-favorite-link--active">В избранное</button>
+                                <div class="box box-between cart-checkout-row">
+                                    <span>Скидка:</span>
+                                    <span class="title-blue">10 000 руб</span>
+                                </div>
+
+                                <div class="box box-between cart-checkout-row">
+                                    <span>Сумма к оплате:</span>
+                                    <span class="title-blue cart-total">40 000 руб</span>
+                                </div>
+
+                                <form action="#" class="coupon-form">
+                                    <div class="coupon-form-group">
+                                        <input type="text" placeholder="Введите купон" class="coupon-form-field">
+                                        <input type="submit" value="Применить" class="btn btn--dark-blue coupon-form-btn">
                                     </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="box box-between box-center--vertical">
-                                        <p class="card-subtitle">Ростелеком</p>
-                                        <p class="card-small-text card-dark-gray-text">Москва</p>
-                                    </div>
-                                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="card-footer box box-between">
-                                    <p class="card-medium-text card-dark-gray-text">16 марта 2019</p>
-                                    <p class="card-large-text card-title--bold card-title--blue">50 000 руб</p>
-                                </div>
+                                </form>
+
+                                <button class="btn btn--light-blue btn-center btn--large">Оформить заказ</button>
                             </div>
                         </div>
                     </div>
