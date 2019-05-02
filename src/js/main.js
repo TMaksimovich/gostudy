@@ -5,5 +5,7 @@
 //= parts/_buttons.js
 //= parts/_tabs.js
 //= parts/_slider.js
+//= parts/_video.js
+//= parts/_accordion.js
 //= parts/_mobile-menu.js
 //= parts/_cookies.js

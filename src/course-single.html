@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        //= html/_head.html
+        <title>GoStudy - Курсы</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="fixed lk-header">
+                <div class="container-full">
+                    <div class="header-box box">
+                        <div class="logo">
+                            <a href="/" class="logo-link"><span>Go</span>Study</a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item"><a href="vacancy.html" class="menu-link">Вакансии</a>
+                                    <ul class="menu-list-child">
+                                        <li class="menu-item"><a href="#" class="menu-link">Вакансии</a>
+                                            <ul class="menu-list-sub">
+                                                <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                                <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                                <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                        <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <span class="search-toggle"></span>
+                            <form role="search" method="get" action="#" class="search-form">
+                                <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
+                                <button class="search-btn" type="submit">Найти</button>
+                            </form>
+                        </div>
+                        <div class="header-meta box">
+                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--notification dropdown-menu--new">
+                                <p class="dropdown-menu-title">Уведомления</p>
+                                <div class="dropdown-menu-list">
+                                    <div class="dropdown-menu-head box box-between">
+                                        <p>Уведомления</p>
+                                        <a href="#">Посмотреть все</a>
+                                    </div>
+                                    <ul class="dropdown-menu-body">
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--message dropdown-menu--new">
+                                <p class="dropdown-menu-title">Сообщения</p>
+                                <div class="dropdown-menu-list">
+                                    <div class="dropdown-menu-head box box-between">
+                                        <p>Сообщения</p>
+                                        <a href="#">Посмотреть все</a>
+                                    </div>
+                                    <ul class="dropdown-menu-body">
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
+                                            <div class="box box-center--vertical">
+                                                <div class="avatar">
+                                                    <img src="img/avatar.svg" alt="">
+                                                </div>
+                                                <div class="meta-box">
+                                                    <p class="meta-title">Екатерина Коробова</p>
+                                                    <p class="meta-small-text">16 марта 2019</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
+                                            <div class="box box-center--vertical">
+                                                <div class="avatar">
+                                                    <img src="img/avatar.svg" alt="">
+                                                </div>
+                                                <div class="meta-box">
+                                                    <p class="meta-title">Екатерина Коробова</p>
+                                                    <p class="meta-small-text">16 марта 2019</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <div class="box box-center--vertical">
+                                                <div class="avatar">
+                                                    <img src="img/avatar.svg" alt="">
+                                                </div>
+                                                <div class="meta-box">
+                                                    <p class="meta-title">Екатерина Коробова</p>
+                                                    <p class="meta-small-text">16 марта 2019</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cart-box">
+                                <a href="cart.html" class="cart">Корзина
+                                    <span class="cart-count">99</span>
+                                </a>
+                            </div>
+
+                            <div class="dropdown-menu dropdown-menu--profile">
+                                <p class="dropdown-menu-title">
+                                    <img src="img/avatar.svg" class="dropdown-menu-avatar" alt="">
+                                </p>
+                                <ul class="dropdown-menu-list">
+                                    <li class="dropdown-menu-item">
+                                        <a href="lk-profile.html" class="dropdown-menu-link">Профиль</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a href="lk-vacancy.html" class="dropdown-menu-link">Мои вакансии</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a href="lk-resume.html" class="dropdown-menu-link">Мои резюме</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a href="#" class="dropdown-menu-link">Курсы</a>
+                                    </li>
+                                    <li class="dropdown-menu-item dropdown-menu-item--logout">
+                                        <a href="#" class="dropdown-menu-link">Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mobile-menu">
+                            <span id="toggle-menu" class="toggle-menu"></span>
+                            <div class="mobile-menu-list">
+                                <div class="mobile-menu-profile">
+                                    <div class="mobile-menu-avatar">
+                                        <img src="img/avatar.svg" alt="Константин Константинопольский">
+                                    </div>
+                                    <div class="mobile-menu-user">
+                                        <p class="mobile-menu-name">Константин Константинопольский</p>
+                                        <p class="mobile-menu-email">konstantink@gmail.com</p>
+                                    </div>
+                                </div>
+                                <ul class="mobile-menu-profile-list">
+                                    <li class="mobile-menu-item mobile-menu-item--active">
+                                        <a href="lk-profile.html" class="mobile-menu-link">Профиль</a>
+                                        <ul class="mobile-menu-list-child">
+                                            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Личные данные</a></li>
+                                            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Пароль</a></li>
+                                            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Удалить учётную запись</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-vacancy.html" class="mobile-menu-link">Мои вакансии</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-resume.html" class="mobile-menu-link">Мои резюме</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="#" class="mobile-menu-link">Курсы</a>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-menu-lk">
+                                    <li class="mobile-menu-item">
+                                        <a href="vacancy.html" class="mobile-menu-link">Вакансии</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="#" class="mobile-menu-link">Контакты</a>
+                                    </li>
+                                    <li class="mobile-menu-item mobile-menu-item--logout">
+                                        <a href="#" class="mobile-menu-link">Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="head-page--banner" style="background-image: url(img/banner.jpg);">
+                <div class="container-full">
+                    <div class="box box-between box-row box-banner">
+                        <div class="column column-eight">
+                            <h1 class="title title--light-blue">JavaScript для начинающих</h1>
+                            <p class="lead-text section-title--white">Изучите JavaScript, слушая теорию и выполняя практические примеры</p>
+                            <p><span class="text-medium">Авторы: </span>WebForMySelf.com Team, Viktor Gavrilenko</p>
+                            <p><span class="text-medium">Язык обучения: </span>Русский</p>
+                            <div class="rating-box box">
+                                <div class="rating-star-box">
+                                    <span class="star star-full"></span>
+                                    <span class="star star-full"></span>
+                                    <span class="star star-full"></span>
+                                    <span class="star star-half"></span>
+                                    <span class="star star-empty"></span>
+                                </div>
+                                <div class="rating-count">
+                                    <p class="rating-count-value">4,7 <span>(52 оценки)</span></p>
+                                </div>
+                                <div class="rating-registration">
+                                    <p><span class="rating-registration-value">257</span> студентов зарегистрировано</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column-third text-center">
+                            <div id="video-block" class="video paused">
+                                <video id="video" preload="none" poster="img/poster.jpg" width="266">
+                                    <source src="#" type="video/mp4">
+                                    <p>Тег video не поддерживается вашим браузером.</p>
+                                    <a href="#">Скачайте видео</a>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <main class="course-single">
+                <div class="container-full">
+                    <div class="box box-row box-wrap box-row--wide">
+                        <div class="column column-eight column--wide column-sm-full">
+                            <div class="card card-wrapper">
+                                <div class="course-block">
+                                    <h2>Чему вы научитесь</h2>
+                                    <ul class="list-half">
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="course-block column-half">
+                                    <h2>Материалы курса</h2>
+                                    <div class="tabs">
+                                        <div class="tabs-head">
+                                            <ul class="tabs-caption">
+                                                <li class="tabs-caption-item active">Максимальный</li>
+                                                <li class="tabs-caption-item">Продвинутый</li>
+                                                <li class="tabs-caption-item">Базовый</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tabs-content active">
+                                            <div class="accordion-wrapper">
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tabs-content">
+                                            <div class="accordion-wrapper">
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tabs-content">
+                                            <div class="accordion-wrapper">
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+
+                                                <div class="accordion">
+                                                    <div class="accordion-header">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                                                    <div class="accordion-collapse">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="course-block">
+                                    <h2>Требования к курсу</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vitae, culpa assumenda necessitatibus consequatur deleniti impedit aspernatur quasi fugiat nam hic, qui molestiae deserunt, animi tempora nostrum, voluptate neque! Molestiae.</p>
+                                </div>
+
+                                <div class="course-block">
+                                    <h2>Описание</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vitae, culpa assumenda necessitatibus consequatur deleniti impedit aspernatur quasi fugiat nam hic, qui molestiae deserunt, animi tempora nostrum, voluptate neque! Molestiae.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column column-third column--wide column-sm-full">
+                            <div class="card card-wrapper">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, est.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+
+            //= html/_footer.html
+            //= html/_scripts.html
+        </div>
+    </body>
+</html>

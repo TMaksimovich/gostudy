@@ -1,0 +1,24 @@
+.rating-star-box {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.star {
+    width: 14px;
+    height: 14px;
+    background-position: 0 0;
+    display: block;
+    margin-right: 2px;
+}
+.star-full {
+    background-image: url(../img/star-full.svg);
+}
+.star-half {
+    background-image: url(../img/star-half.svg);
+}
+.star-empty {
+    background-image: url(../img/star-empty.svg);
+}
+.rating-count {
+    margin-right: 20px;
+}

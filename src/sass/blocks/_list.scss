@@ -18,6 +18,16 @@
 		display: none;
 	}
 }
+.privacy-item {
+	margin-bottom: 0;
+}
+.list-half {
+	li {
+		width: 48%;
+	    display: inline-block;
+	    vertical-align: top;
+	}
+}
 
 
 @media screen and (max-width: 767px) {

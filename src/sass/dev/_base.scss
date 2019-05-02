@@ -57,6 +57,14 @@ h6 {
 p + p {
   margin-top: 20px;
 }
+.lead-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.text-center {
+  text-align: center;
+}
 
 .section {
   padding: 20px 0 50px;
@@ -71,20 +79,18 @@ a {
 }
 
 ul {
-  // margin: 0;
   margin: 5px 0;
   list-style: none;
   padding-left: 0;
   li {
     position: relative;
     padding-left: 15px;
+    margin-bottom: 15px;
     &:before {
       content: '';
       position: absolute;
-      top: 0;
+      top: 8px;
       left: 0;
-      bottom: 0;
-      margin: auto;
       width: 5px;
       height: 5px;
       border-radius: 50%;
@@ -186,6 +192,9 @@ input[type="search"] {
   text-align: center;
   margin-bottom: 10px;
 }
+.text-medium {
+  font-weight: 500;
+}
 .white-bg {
   background-color: #fff;
 }
@@ -208,6 +217,7 @@ input[type="search"] {
   display: inline-block;
   vertical-align: top;
   font-size: 10px;
+  margin-bottom: 0;
   &:before {
     display: none;
   }
