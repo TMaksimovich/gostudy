@@ -49,10 +49,43 @@
         color: $dark-blue;
     }
 }
+.btn-default {
+    background-color: transparent;
+    border: 0.5px solid #C7C6C6;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: $font-color;
+    padding: 5px 10px;
+}
+.btn-border {
+    border-width: 1px;
+    border-style: solid;
+}
+.btn-border--blue {
+    border-color: $blue;
+}
 .btn-full {
     width: 100%;
 }
 .btn-center {
     margin: auto;
     display: block;
+}
+.share-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: $blue;
+    padding-left: 20px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 13px;
+        background: url(../img/share.svg) 0 0 no-repeat;
+    }
 }

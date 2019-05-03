@@ -11,19 +11,20 @@
 }
 .accordion-collapse {
     display: none;
+    padding-left: 15px;
 }
 .accordion-header {
     color: $dark-blue;
     font-size: 16px;
     line-height: 21px;
     cursor: pointer;
-    padding-right: 10px;
+    padding-left: 15px;
     position: relative;
     &:after {
         content: '';
         position: absolute;
         top: 5px;
-        right: 0;
+        left: 0;
         width: 10px;
         height: 10px;
         background: url(../img/arrow-down-blue.svg) 0 0 no-repeat;

@@ -117,3 +117,112 @@
   width: 30px;
   text-align: right;
 }
+
+.card-buy {
+  .tabs-content {
+    color: $font-color;
+  }
+  .tabs {
+    position: relative;
+  }
+  .tabs-head {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .price-box {
+    padding-bottom: 55px;
+    font-size: 16px;
+    font-weight: normal;
+    height: 135px;
+    overflow: hidden;
+  }
+  .new-price {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: $blue;
+    margin-right: 5px;
+  }
+  .old-price {
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: line-through;
+  }
+  .price-action {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark-blue;
+    position: relative;
+    padding-left: 20px;
+    margin: 5px 0;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background: url(../img/action.svg) 0 0 no-repeat;
+    }
+  }
+  .button-box {
+    flex-direction: column;
+    align-items: center;
+    .btn {
+      margin: 5px 0;
+      width: 200px;
+    }
+  }
+  .coupon-form {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  .card-favorite-link {
+    width: 19px;
+    height: 19px;
+    background-size: 100%;
+    background: url(../img/star-dark.svg) 0 0 no-repeat;
+  }
+  .card-favorite-link--active {
+    background: url(../img/star-blue.svg) 0 0 no-repeat;
+    & + .card-favorite-desc {
+      display: none;
+    }
+  }
+  .card-favorite-desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.about-course-box {
+  h4,
+  h2,
+  h2,
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: $font-color;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .card-buy {
+    .tabs-head {
+      position: static;
+      margin-bottom: 20px;
+    }
+    .price-box {
+      height: auto;
+      padding-bottom: 0;
+    }
+  }
+}

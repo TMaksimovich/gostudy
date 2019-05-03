@@ -165,6 +165,57 @@
         margin-left: 0;
     }
 }
+.column-photo {
+    margin: 10px 0;
+    p {
+        margin-top: 5px;
+        & + p {
+            margin-top: 5px;
+        }
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    .meta-box {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $title-color;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .rating-star-box {
+        margin-top: 5px;
+        p {
+            margin-top: 0;
+            & + .star {
+                margin-left: 5px;
+            }
+        }
+        .star + .rating-count-value {
+            margin-left: 5px;
+        }
+        & + h3,
+        & + h1,
+        & + h2,
+        & + h4 {
+            margin-top: 7px;
+        }
+    }
+}
+.column-photo-desc {
+    padding: 0 15px;
+}
+.column-photo--divider {
+    border-bottom: 0.75px solid #ABABAB;
+    padding-bottom: 10px;
+    &:last-child {
+        border-bottom: none;
+    }
+}
 // end Курс
 
 @media screen and (max-width: 767px) {
@@ -190,5 +241,30 @@
     }
     .vacancy-date {
         text-align: left;
+    }
+    .head-page--banner {
+        .video-column {
+            margin-bottom: 20px;
+        }
+    }
+
+    .column-photo-desc {
+        width: 77%;
+        padding: 0 10px;
+    }
+    .btn-add-feedback {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .course-single {
+        .container-full,
+        .container {
+            margin-top: 20px;
+        }
+    }
+    .head-page--banner {
+        padding-bottom: 30px;
     }
 }

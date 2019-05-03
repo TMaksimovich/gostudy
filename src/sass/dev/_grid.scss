@@ -70,6 +70,9 @@
   .column-xs-full {
     width: 100%;
   }
+  .box-xs-reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -85,6 +88,9 @@
   .container-full {
     padding: 0 15px;
   }
+  .box-sm-reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -99,6 +105,9 @@
   .box-row--thin {
     margin: 0 -15px;
     padding: 0;
+  }
+  .column-md-full {
+    width: 100%;
   }
 }
 

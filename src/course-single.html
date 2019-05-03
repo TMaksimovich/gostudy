@@ -194,8 +194,8 @@
 
             <div class="head-page--banner" style="background-image: url(img/banner.jpg);">
                 <div class="container-full">
-                    <div class="box box-between box-row box-banner">
-                        <div class="column column-eight">
+                    <div class="box box-between box-row box-banner box-xs-reverse">
+                        <div class="column column-sm-full column-eight">
                             <h1 class="title title--light-blue">JavaScript для начинающих</h1>
                             <p class="lead-text section-title--white">Изучите JavaScript, слушая теорию и выполняя практические примеры</p>
                             <p><span class="text-medium">Авторы: </span>WebForMySelf.com Team, Viktor Gavrilenko</p>
@@ -216,7 +216,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column column-third text-center">
+                        <div class="column column-sm-full column-third text-center video-column">
                             <div id="video-block" class="video paused">
                                 <video id="video" preload="none" poster="img/poster.jpg" width="266">
                                     <source src="#" type="video/mp4">
@@ -231,12 +231,12 @@
 
             <main class="course-single">
                 <div class="container-full">
-                    <div class="box box-row box-wrap box-row--wide">
+                    <div class="box box-row box-wrap box-row--wide box-sm-reverse">
                         <div class="column column-eight column--wide column-sm-full">
                             <div class="card card-wrapper">
                                 <div class="course-block">
                                     <h2>Чему вы научитесь</h2>
-                                    <ul class="list-half">
+                                    <ul class="list-half list-xs-full">
                                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
                                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
@@ -244,7 +244,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="course-block column-half">
+                                <div class="course-block column-md-full column-eight">
                                     <h2>Материалы курса</h2>
                                     <div class="tabs">
                                         <div class="tabs-head">
@@ -368,19 +368,248 @@
                                     <h2>Описание</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vitae, culpa assumenda necessitatibus consequatur deleniti impedit aspernatur quasi fugiat nam hic, qui molestiae deserunt, animi tempora nostrum, voluptate neque! Molestiae.</p>
                                 </div>
+
+                                <div class="course-block">
+                                    <h2>О преподавателях</h2>
+                                    <div class="box box-wrap">
+                                        <div class="column-full column-photo box">
+                                            <div class="avatar">
+                                                <img src="img/feedback.jpg" alt="Василий Иванов">
+                                            </div>
+                                            <div class="column-photo-desc column-ten">
+                                                <h3 class="title--light-blue">Василий Иванов</h3>
+                                                <div class="meta-box">
+                                                    <div class="rating-star-box">
+                                                        <div class="box">
+                                                            <p>Рейтинг преподавателя: </p>
+                                                            <span class="star star-full"></span>
+                                                            <span class="star star-full"></span>
+                                                            <span class="star star-full"></span>
+                                                            <span class="star star-full"></span>
+                                                            <span class="star star-empty"></span>
+                                                            <span class="rating-count-value">4.0 балла</span>
+                                                        </div>
+                                                    </div>
+                                                    <p>Отзывы: 15</p>
+                                                    <p>Количество студентов: 50</p>
+                                                    <p>Курсы: 3</p>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="column-full column-photo box">
+                                            <div class="avatar">
+                                                <img src="img/feedback.jpg" alt="Василий Иванов">
+                                            </div>
+                                            <div class="column-photo-desc column-ten">
+                                                <h3 class="title--light-blue">Василий Иванов</h3>
+                                                <div class="meta-box">
+                                                    <div class="rating-star-box">
+                                                        <div class="box">
+                                                            <p>Рейтинг преподавателя: </p>
+                                                            <span class="star star-full"></span>
+                                                            <span class="star star-full"></span>
+                                                            <span class="star star-full"></span>
+                                                            <span class="star star-half"></span>
+                                                            <span class="star star-empty"></span>
+                                                            <span class="rating-count-value">3.5 балла</span>
+                                                        </div>
+                                                    </div>
+                                                    <p>Отзывы: 15</p>
+                                                    <p>Количество студентов: 50</p>
+                                                    <p>Курсы: 3</p>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="course-block">
+                                    <div class="box box-between box-center--vertical">
+                                        <h2>Отзывы студентов</h2>
+                                        <a href="#addFeedback" class="btn btn--light-blue btn-modal btn-add-feedback">Добавить отзыв</a>
+                                    </div>
+
+                                    <div class="box box-wrap">
+                                        <div class="column-full column-photo column-photo--divider box">
+                                            <div class="avatar">
+                                                <img src="img/feedback.jpg" alt="Василий Иванов">
+                                            </div>
+                                            <div class="column-photo-desc column-ten">
+                                                <div class="rating-star-box">
+                                                    <span class="star star-full"></span>
+                                                    <span class="star star-full"></span>
+                                                    <span class="star star-full"></span>
+                                                    <span class="star star-full"></span>
+                                                    <span class="star star-empty"></span>
+                                                </div>
+                                                <h3 class="title--light-blue">Василий Иванов</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="column-full column-photo column-photo--divider box">
+                                            <div class="avatar">
+                                                <img src="img/feedback.jpg" alt="Василий Иванов">
+                                            </div>
+                                            <div class="column-photo-desc column-ten">
+                                                <div class="rating-star-box">
+                                                    <span class="star star-full"></span>
+                                                    <span class="star star-full"></span>
+                                                    <span class="star star-full"></span>
+                                                    <span class="star star-full"></span>
+                                                    <span class="star star-empty"></span>
+                                                </div>
+                                                <h3 class="title--light-blue">Василий Иванов</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box box-center">
+                                        <button type="button" class="btn btn-default">Показать ещё</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="column column-third column--wide column-sm-full">
-                            <div class="card card-wrapper">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, est.</p>
+                            <div class="card card-wrapper card-buy">
+                                <div class="tabs">
+                                    <div class="tabs-head">
+                                        <ul class="tabs-caption tabs-caption--blue">
+                                            <li class="tabs-caption-item tabs-caption-item--blue active">Максимальный</li>
+                                            <li class="tabs-caption-item tabs-caption-item--blue">Продвинутый</li>
+                                            <li class="tabs-caption-item tabs-caption-item--blue">Базовый</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tabs-content active">
+                                        <div class="price-box">
+                                            <p>
+                                                <span class="new-price">10 000 руб</span>
+                                                <span class="old-price">20 000 руб</span>
+                                            </p>
+                                            <p>Скидка 50%</p>
+                                            <p class="price-action">Данная цена доступна еще 14 часов!</p>
+                                        </div>
+
+                                        <div class="button-box box">
+                                            <button class="btn btn--light-blue">Добавить в корзину</button>
+                                            <button class="btn btn-white btn-border btn-border--blue">Купить сейчас</button>
+                                        </div>
+
+                                        <div class="about-course-box">
+                                            <h4>Курс включает:</h4>
+                                            <ul>
+                                                <li>19,5 часа видео по запросу</li>
+                                                <li>27 ресурсов для скачивания</li>
+                                                <li>Полный пожизненный доступ</li>
+                                                <li>Доступ через мобильные устройства и телевизор</li>
+                                                <li>Сертификат об окончании</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="tabs-content">
+                                        <div class="price-box">
+                                            <p>
+                                                <span class="new-price">5 000 руб</span>
+                                                <span class="old-price">10 000 руб</span>
+                                            </p>
+                                            <p>Скидка 50%</p>
+                                            <p class="price-action">Данная цена доступна еще 14 часов!</p>
+                                        </div>
+
+                                        <div class="button-box box">
+                                            <button class="btn btn--light-blue">Добавить в корзину</button>
+                                            <button class="btn btn-white btn-border btn-border--blue">Купить сейчас</button>
+                                        </div>
+
+                                        <div class="about-course-box">
+                                            <h4>Курс включает:</h4>
+                                            <ul>
+                                                <li>19,5 часа видео по запросу</li>
+                                                <li>27 ресурсов для скачивания</li>
+                                                <li>Полный пожизненный доступ</li>
+                                                <li>Доступ через мобильные устройства и телевизор</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="tabs-content">
+                                        <div class="price-box">
+                                            <p>
+                                                <span class="new-price">2 500 руб</span>
+                                                <span class="old-price">5 000 руб</span>
+                                            </p>
+                                            <p>Скидка 50%</p>
+                                            <p class="price-action">Данная цена доступна еще 14 часов!</p>
+                                        </div>
+
+                                        <div class="button-box box">
+                                            <button class="btn btn--light-blue">Добавить в корзину</button>
+                                            <button class="btn btn-white btn-border btn-border--blue">Купить сейчас</button>
+                                        </div>
+
+                                        <div class="about-course-box">
+                                            <h4>Курс включает:</h4>
+                                            <ul>
+                                                <li>19,5 часа видео по запросу</li>
+                                                <li>27 ресурсов для скачивания</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <form action="#" class="coupon-form">
+                                    <div class="coupon-form-group">
+                                        <input type="text" placeholder="Введите купон" class="coupon-form-field">
+                                        <input type="submit" value="Применить" class="btn btn--dark-blue coupon-form-btn">
+                                    </div>
+                                </form>
+
+                                <div class="box box-between box-center--vertical">
+                                    <a href="#shareCourse" class="share-link btn-modal">Поделиться</a>
+                                    <div class="favorite-box">
+                                        <button class="card-favorite-link"></button>
+                                        <span class="card-favorite-desc">В избранное</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </main>
 
+            <form id="addFeedback" class="mfp-hide white-popup-block">
+                <div class="form-head">
+                    <p>Добавить отзыв</p>
+                </div>
 
+                <div class="form-body">
+                    <div class="field-group">
+                        <label for="sources-message" class="label-field">Комментарий</label>
+                        <textarea name="message" id="sources-message" rows="7"></textarea>
+                    </div>
+
+                    <input type="submit" value="Отправить" class="btn btn-center">
+                </div>
+            </form>
+
+            <form id="shareCourse" class="mfp-hide white-popup-block">
+                <div class="form-head">
+                    <p>Поделиться этим курсом</p>
+                </div>
+
+                <div class="form-body">
+                    <div class="field-group">
+
+                    </div>
+                </div>
+            </form>
 
             //= html/_footer.html
             //= html/_scripts.html

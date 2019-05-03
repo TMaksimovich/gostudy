@@ -49,6 +49,31 @@
 .tabs-caption {
     margin: 0;
 }
+.tabs-caption--blue {
+    border: 1px solid $dark-blue;
+    border-radius: 5px;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+.tabs-caption-item--blue {
+    border-left: 1px solid $dark-blue;
+    margin: 0;
+    padding: 7px 5px;
+    width: 40%;
+    color: $dark-blue;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    &:first-child {
+        border-left: none;
+    }
+    &.active {
+        color: #fff;
+        border-bottom: none;
+        background-color: $dark-blue;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .tabs-content {
@@ -61,6 +86,9 @@
     }
     .tabs-caption-item {
         margin: 0 8px 10px;
+    }
+    .tabs-caption-item--blue {
+        margin: 0;
     }
     .tabs-head {
         margin-bottom: 5px;
