@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        //= html/_head.html
+        <title>GoStudy - Ошибка аутентификации</title>
+    </head>
+
+    <body>
+        <div class="wrapper wrapper-flex--sm">
+            <header class="fixed">
+                <div class="container">
+                    <div class="header-box box">
+                        <div class="logo">
+                            <a href="/" class="logo-link"><span>Go</span>Study</a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item"><a href="vacancy.html" class="menu-link menu-link--active">Вакансии</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <span class="search-toggle"></span>
+                            <form role="search" method="get" action="#" class="search-form">
+                                <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
+                                <button class="search-btn" type="submit">Найти</button>
+                            </form>
+                        </div>
+                        <div class="header-meta box">
+                            <div class="cart-box">
+                                <a href="cart-empty.html" class="cart">Корзина</a>
+                            </div>
+                        </div>
+                        <div class="header-links">
+                            <ul class="header-links-list">
+                                <li class="header-links-item">
+                                    <a href="#loginForm" class="header-links-login btn-modal">Войти</a>
+                                </li>
+                                <li class="header-links-item">
+                                    <a href="#registrationForm" class="header-links-registration btn-modal">Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mobile-menu">
+                            <span id="toggle-menu" class="toggle-menu"></span>
+                            <ul class="mobile-menu-list">
+                                <li class="mobile-menu-item">
+                                    <a href="vacancy.html" class="mobile-menu-link">Вакансии</a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="#" class="mobile-menu-link">Контакты</a>
+                                </li>
+                                <li class="mobile-menu-item mobile-menu-item--divider">
+                                    <a href="#loginForm" class="mobile-menu-link btn-modal">Войти</a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="#registrationForm" class="mobile-menu-link btn-modal">Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="container">
+                    <div class="error-box">
+                        <div class="column column-md-full column-half">
+                            <div class="error-icon"><img src="img/401.svg" alt="Unauthorized"></div>
+                            <p class="error-title">401</p>
+                            <p class="error-subtitle">Unauthorized</p>
+                            <p class="error-desc">Ошибка аутентификации, пожалуйста залогиньтесь.</p>
+                            <a href="#loginForm" class="error-btn btn btn--light-blue btn-modal">Залогиниться</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            //= html/_footer.html
+            //= html/_form.html
+            //= html/_scripts.html
+        </div>
+    </body>
+</html>
