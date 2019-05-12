@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        //= html/_lk-head.html
+        <title>GoStudy - Курсы</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="fixed lk-header">
+                <div class="container-full">
+                    <div class="header-box box">
+                        <div class="logo">
+                            <a href="/" class="logo-link"><span>Go</span>Study</a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item"><a href="vacancy.html" class="menu-link">Вакансии</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <span class="search-toggle"></span>
+                            <form role="search" method="get" action="#" class="search-form">
+                                <input class="search-field" type="search" name="s" placeholder="Поиск вакансий, курсов и стажировок">
+                                <button class="search-btn" type="submit">Найти</button>
+                            </form>
+                        </div>
+                        <div class="header-meta box">
+                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--notification dropdown-menu--new">
+                                <p class="dropdown-menu-title">Уведомления</p>
+                                <div class="dropdown-menu-list">
+                                    <div class="dropdown-menu-head box box-between">
+                                        <p>Уведомления</p>
+                                        <a href="#">Посмотреть все</a>
+                                    </div>
+                                    <ul class="dropdown-menu-body">
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--message dropdown-menu--new">
+                                <p class="dropdown-menu-title">Сообщения</p>
+                                <div class="dropdown-menu-list">
+                                    <div class="dropdown-menu-head box box-between">
+                                        <p>Сообщения</p>
+                                        <a href="#">Посмотреть все</a>
+                                    </div>
+                                    <ul class="dropdown-menu-body">
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
+                                            <div class="box box-center--vertical">
+                                                <div class="avatar">
+                                                    <img src="img/avatar.svg" alt="">
+                                                </div>
+                                                <div class="meta-box">
+                                                    <p class="meta-title">Екатерина Коробова</p>
+                                                    <p class="meta-small-text">16 марта 2019</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item dropdown-menu-item--new">
+                                            <div class="box box-center--vertical">
+                                                <div class="avatar">
+                                                    <img src="img/avatar.svg" alt="">
+                                                </div>
+                                                <div class="meta-box">
+                                                    <p class="meta-title">Екатерина Коробова</p>
+                                                    <p class="meta-small-text">16 марта 2019</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                        <li class="dropdown-menu-item">
+                                            <div class="box box-center--vertical">
+                                                <div class="avatar">
+                                                    <img src="img/avatar.svg" alt="">
+                                                </div>
+                                                <div class="meta-box">
+                                                    <p class="meta-title">Екатерина Коробова</p>
+                                                    <p class="meta-small-text">16 марта 2019</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="dropdown-menu-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cart-box">
+                                <a href="cart.html" class="cart">Корзина
+                                    <span class="cart-count">99</span>
+                                </a>
+                            </div>
+
+                            <div class="dropdown-menu dropdown-menu--profile">
+                                <p class="dropdown-menu-title">
+                                    <img src="img/avatar.svg" class="dropdown-menu-avatar" alt="">
+                                </p>
+                                <ul class="dropdown-menu-list">
+                                    <li class="dropdown-menu-item">
+                                        <a href="lk-profile.html" class="dropdown-menu-link">Профиль</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a href="lk-vacancy.html" class="dropdown-menu-link">Мои вакансии</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a href="lk-resume.html" class="dropdown-menu-link">Мои резюме</a>
+                                    </li>
+                                    <li class="dropdown-menu-item">
+                                        <a href="lk-course.html" class="dropdown-menu-link">Курсы</a>
+                                    </li>
+                                    <li class="dropdown-menu-item dropdown-menu-item--logout">
+                                        <a href="#" class="dropdown-menu-link">Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mobile-menu">
+                            <span id="toggle-menu" class="toggle-menu"></span>
+                            <div class="mobile-menu-list">
+                                <div class="mobile-menu-profile">
+                                    <div class="mobile-menu-avatar">
+                                        <img src="img/avatar.svg" alt="Константин Константинопольский">
+                                    </div>
+                                    <div class="mobile-menu-user">
+                                        <p class="mobile-menu-name">Константин Константинопольский</p>
+                                        <p class="mobile-menu-email">konstantink@gmail.com</p>
+                                    </div>
+                                </div>
+                                <ul class="mobile-menu-profile-list">
+                                    <li class="mobile-menu-item mobile-menu-item--active">
+                                        <a href="lk-profile.html" class="mobile-menu-link">Профиль</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-vacancy.html" class="mobile-menu-link">Мои вакансии</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-resume.html" class="mobile-menu-link">Мои резюме</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="lk-course.html" class="mobile-menu-link">Курсы</a>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-menu-lk">
+                                    <li class="mobile-menu-item">
+                                        <a href="vacancy.html" class="mobile-menu-link">Вакансии</a>
+                                    </li>
+                                    <li class="mobile-menu-item">
+                                        <a href="#" class="mobile-menu-link">Контакты</a>
+                                    </li>
+                                    <li class="mobile-menu-item mobile-menu-item--logout">
+                                        <a href="#" class="mobile-menu-link">Выйти</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="lk-wrapper">
+                <aside class="sidebar">
+                    <div class="sidebar-content fixed">
+                        <div class="sidebar-profile">
+                            <div class="sidebar-avatar">
+                                <img src="img/avatar.svg" alt="Константин Константинопольский">
+                            </div>
+                            <p class="sidebar-name">Константин Константинопольский</p>
+                            <p class="sidebar-email">konstantink@gmail.com</p>
+                        </div>
+                        <ul class="sidebar-menu">
+                            <li class="sidebar-item">
+                                <span class="sidebar-link sidebar-menu-trigger">Профиль</span>
+                                <ul class="sidebar-menu-child">
+                                    <li class="sidebar-item">
+                                        <a href="lk-profile.html" class="sidebar-link">Личные данные</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="lk-profile.html" class="sidebar-link">Пароль</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="lk-profile.html" class="sidebar-link">Удалить учётную запись</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="lk-vacancy.html" class="sidebar-link">Мои вакансии</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="lk-resume.html" class="sidebar-link">Мои резюме</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <span class="sidebar-link sidebar-menu-trigger active">Курсы</span>
+                                <ul class="sidebar-menu-child show">
+                                    <li class="sidebar-item sidebar-item--active">
+                                        <a href="lk-course.html" class="sidebar-link">Мои курсы</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="lk-course.html" class="sidebar-link">Приём платежей</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item sidebar-item--logout">
+                                <a href="#" class="sidebar-link">Выход</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <main class="lk-main">
+                    <div class="tabs lk-tabs">
+                        <div class="tabs-head lk-tabs-head">
+                            <ul class="tabs-caption">
+                                <li class="tabs-caption-item active">Мои курсы</li>
+                                <li class="tabs-caption-item">Платежи</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabs-content active column column-full column-lk card">
+                            <div class="box-head box">
+                                <h1>Мои курсы</h1>
+                                <a href="#" class="btn btn--light-blue">Добавить курс</a>
+                            </div>
+
+                            <div class="box-body">
+                                <div class="lk-table">
+                                    <div class="lk-table-row lk-table-row-th">
+                                        <div class="lk-table-th lk-table-name">Название</div>
+                                        <div class="lk-table-th lk-table-cash">Стоимость</div>
+                                        <div class="lk-table-th lk-table-update">Последнее обновление</div>
+                                        <div class="lk-table-th lk-table-status">Статус</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">
+                                            <a href="#">Веб-разработка и её сложности</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">от 50 000 до 70 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name"><a href="#">Проектирование интерфейсов</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">30 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name"><a href="#">Проектирование интерфейсов</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">30 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">
+                                            <a href="#">Веб-разработка и её сложности</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">от 50 000 до 70 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">
+                                            <a href="#">Веб-разработка и её сложности</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">от 50 000 до 70 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">
+                                            <a href="#">Веб-разработка и её сложности</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">от 50 000 до 70 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">
+                                            <a href="#">Веб-разработка и её сложности</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">от 50 000 до 70 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name"><a href="#">Проектирование интерфейсов</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">30 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status archive">В архиве</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name"><a href="#">Проектирование интерфейсов</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">30 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status published">Опубликовано</div>
+                                    </div>
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name"><a href="#">Проектирование интерфейсов</a>
+                                            <ul class="lk-table-list">
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Смотреть</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Редактировать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Опубликовать</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link">Снять с публикации</a></li>
+                                                <li class="lk-table-item"><a href="#" class="lk-table-link lk-table-link--remove">Удалить</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lk-table-td lk-table-cash">30 000 руб</div>
+                                        <div class="lk-table-td lk-table-update">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-status draft">Черновик</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <nav class="pagination column-full" role="navigation">
+                                <div class="nav-links">
+                                    <a class="prev page-numbers" href="#">&lt;</a>
+                                    <span aria-current="page" class="page-numbers current">1</span>
+                                    <a class="page-numbers" href="#">2</a>
+                                    <a class="page-numbers" href="#">3</a>
+                                    <span class="page-numbers more">…</span>
+                                    <a class="page-numbers" href="#">98</a>
+                                    <a class="page-numbers" href="#">99</a>
+                                    <a class="next page-numbers" href="#">&gt;</a>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="tabs-content column column-full column-lk card">
+                            <div class="box-head box">
+                                <h1>Платежи</h1>
+                                <a href="#" class="btn btn--light-blue">Вывести деньги</a>
+                            </div>
+                            <div class="box-body">
+                                <div class="payments-box">
+                                    <div class="box-row box">
+                                        <div class="payments-column column column-xs-full column-third column-xl-four">
+                                            <p>Получено:</p>
+                                            <p class="payments-amount title--light-blue">100 000 руб</p>
+                                            <p class="payments-note">20 платежей</p>
+                                        </div>
+                                        <div class="payments-column column column-xs-full column-third column-xl-four">
+                                            <p>Комиссия:</p>
+                                            <p class="payments-amount title--light-blue">10 000 руб</p>
+                                            <p class="payments-note">15% от суммы платежа</p>
+                                        </div>
+                                        <div class="payments-column column column-xs-full column-third column-xl-four">
+                                            <p>Доступно к выводу:</p>
+                                            <p class="payments-amount title--light-blue">90 000 руб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-table lk-table-payments">
+                                    <div class="lk-table-row lk-table-row-th">
+                                        <div class="lk-table-th lk-table-name">Курс</div>
+                                        <div class="lk-table-th lk-table-user">Плательщик</div>
+                                        <div class="lk-table-th lk-table-date">Дата</div>
+                                        <div class="lk-table-th lk-table-sum">Сумма</div>
+                                        <div class="lk-table-th lk-table-code">Код</div>
+                                        <div class="lk-table-th lk-table-type">Тип операции</div>
+                                        <div class="lk-table-th lk-table-status">Статус</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Начисление</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Запрос</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Снятие</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Отмена</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Начисление</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Выполнено</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Снятие</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Выполнено</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Начисление</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Выполнено</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Снятие</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Выполнено</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Начисление</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Выполнено</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Снятие</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Выполнено</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Начисление</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Выполнено</div>
+                                    </div>
+
+                                    <div class="lk-table-row lk-table-row-td">
+                                        <div class="lk-table-td lk-table-name">Веб-разработка и её сложности</div>
+                                        <div class="lk-table-td lk-table-user">Константинопольский К.К.</div>
+                                        <div class="lk-table-td lk-table-date">08.02.2019</div>
+                                        <div class="lk-table-td lk-table-sum">15 000 руб</div>
+                                        <div class="lk-table-td lk-table-code"><span>Код</span>1234567890</div>
+                                        <div class="lk-table-td lk-table-type"><span>Тип операции</span>Снятие</div>
+                                        <div class="lk-table-td lk-table-status"><span>Статус</span>Выполнено</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <nav class="pagination column-full" role="navigation">
+                                <div class="nav-links">
+                                    <a class="prev page-numbers" href="#">&lt;</a>
+                                    <span aria-current="page" class="page-numbers current">1</span>
+                                    <a class="page-numbers" href="#">2</a>
+                                    <a class="page-numbers" href="#">3</a>
+                                    <span class="page-numbers more">…</span>
+                                    <a class="page-numbers" href="#">98</a>
+                                    <a class="page-numbers" href="#">99</a>
+                                    <a class="next page-numbers" href="#">&gt;</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+
+            //= html/_lk-footer.html
+            //= html/_lk-scripts.html
+        </div>
+    </body>
+</html>

@@ -76,12 +76,52 @@
     }
 }
 
+.payments-box {
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.payments-column {
+    margin-bottom: 20px;
+}
+.payments-amount {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    padding: 5px 0;
+}
+.payments-note {
+    color: $font-color;
+}
+
 @media screen and (max-width: 767px) {
+    .lk-main {
+        .box-head h1 {
+            width: 100%;
+        }
+    }
     .lk-form-change-password {
         width: 100%;
     }
     .tabs-caption-item {
         margin-bottom: 15px;
+    }
+    .payments-column {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        .payments-amount {
+            max-width: 100%;
+        }
+    }
+    .payments-amount {
+        order: 2;
+        width: 100%;
+        font-size: 21px;
+        line-height: 24px;
+    }
+    .payments-note {
+        margin-left: 10px;
+        font-size: 14px;
     }
 }
 
@@ -125,5 +165,12 @@
             width: 100%;
             margin-bottom: 0;
         }
+    }
+    .payments-amount {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .payments-column {
+        font-size: 15px;
     }
 }

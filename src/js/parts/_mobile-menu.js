@@ -2,7 +2,8 @@
 (function() {
     $('#toggle-menu, .sidebar-menu-trigger').click(function(){
         $(this).toggleClass('active');
-        $('.mobile-menu-list, .sidebar-menu-child').toggleClass('show');
+        $(this).closest('.sidebar-item').find('.sidebar-menu-child').toggleClass('show');
+        $('.mobile-menu-list').toggleClass('show');
     });
 }());
 // end mobile-menu
