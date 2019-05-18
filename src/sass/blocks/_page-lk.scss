@@ -92,6 +92,19 @@
 .payments-note {
     color: $font-color;
 }
+.lk-form-add-course {
+    button {
+        margin-top: 0;
+    }
+    .box-btn {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        align-items: baseline;
+        .column {
+            margin-right: 40px;
+        }
+    }
+}
 
 @media screen and (max-width: 767px) {
     .lk-main {
@@ -122,6 +135,22 @@
     .payments-note {
         margin-left: 10px;
         font-size: 14px;
+    }
+    .lk-form-add-course {
+        .file-field-container {
+            width: 200px;
+        }
+        .box-btn {
+            flex-wrap: nowrap;
+            .column {
+                margin-right: 0px;
+                padding: 0;
+            }
+        }
+        .btn-text {
+            padding-right: 0;
+            margin-right: 15px;
+        }
     }
 }
 

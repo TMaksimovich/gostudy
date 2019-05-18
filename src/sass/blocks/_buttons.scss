@@ -89,3 +89,13 @@
         background: url(../img/share.svg) 0 0 no-repeat;
     }
 }
+.btn-text {
+    background-color: transparent;
+    border: none;
+}
+.btn-text--dark-blue {
+    color: $dark-blue;
+    &:hover {
+        color: $blue;
+    }
+}
