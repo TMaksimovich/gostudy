@@ -218,6 +218,28 @@
 }
 // end Курс
 
+// Контакты
+.contacts {
+    padding-bottom: 40px;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    p {
+        font-weight: 400;
+        & + p {
+            margin-top: 10px;
+        }
+        & > span {
+            font-weight: 700;
+            margin-right: 7px;
+        }
+    }
+}
+// end Контакты
+
 @media screen and (max-width: 767px) {
     .courses {
         .card {
